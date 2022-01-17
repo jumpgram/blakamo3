@@ -14,5 +14,5 @@ if (isLocalRunning) {
   loadJS("http://127.0.0.1:5502/dashboard/user.js");
 } else {
   console.log("running code from Main");
-  loadJS("https://jumpgram-code.s3.amazonaws.com/dashboard/user.js");
+  loadJS("/js/dashboard/user.js");
 }
