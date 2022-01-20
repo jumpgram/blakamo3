@@ -1,4 +1,4 @@
-import { FormValidation } from "../form-slider.js";
+import { FormValidation } from "./form-slider.js";
 
 class SobreForm {
   constructor(form) {
