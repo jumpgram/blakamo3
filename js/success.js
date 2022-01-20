@@ -27,6 +27,11 @@ class HandleUserRedirection {
         ).innerHTML = `No User Found with username ${username}`;
         document.querySelector(".loader").style.display = "none";
       }
+    } else {
+      document.querySelector(".loader").style.display = "none";
+      document.querySelector(
+        "[page-title='true']"
+      ).innerHTML = `Username is missing in the URL`;
     }
   }
 
