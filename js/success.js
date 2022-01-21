@@ -2,10 +2,12 @@ const STAPIURL = `https://jumpgram-strapi.herokuapp.com/api/insta-users`;
 
 class HandleUserRedirection {
   constructor() {
+    this.RETRY_KEY = "retry-count";
     this.init();
   }
 
   init() {
+    this.resetRetryCount();
     this.getUserTokenFromStrapi();
   }
 
@@ -22,10 +24,9 @@ class HandleUserRedirection {
         const user = resData.data[0];
         this.redirectToUserProfile(user);
       } else {
-        document.querySelector(
-          "[page-title='true']"
-        ).innerHTML = `No User Found with username ${username}`;
-        document.querySelector(".loader").style.display = "none";
+        setTimeout(() => {
+          this.retryToGetUserTokenFromStrapi();
+        }, 3000);
       }
     } else {
       document.querySelector(".loader").style.display = "none";
@@ -45,6 +46,37 @@ class HandleUserRedirection {
     const { token } = user?.attributes || {};
     const url = `http://app.jumpgram.co/#${token}`;
     window.location.href = url;
+  }
+
+  retryToGetUserTokenFromStrapi() {
+    const retryCount = this.getRetryCount();
+    if (retryCount < 4) {
+      this.setRetryCount(retryCount + 1);
+      this.getUserTokenFromStrapi();
+    } else {
+      document.querySelector(".loader").style.display = "none";
+      document.querySelector(
+        "[page-title='true']"
+      ).innerHTML = `Unable to get user token, Please contact at melissa@jumpgram.co`;
+    }
+  }
+
+  getRetryCount() {
+    const retryCount = parseInt(localStorage.getItem(this.RETRY_KEY) || 0);
+    return retryCount;
+  }
+
+  setRetryCount(retryCount) {
+    localStorage.setItem(this.RETRY_KEY, retryCount);
+  }
+
+  incrementRetryCount() {
+    const retryCount = this.getRetryCount();
+    this.setRetryCount(retryCount + 1);
+  }
+
+  resetRetryCount() {
+    localStorage.removeItem(this.RETRY_KEY);
   }
 }
 
