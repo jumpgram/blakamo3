@@ -1171,7 +1171,7 @@
                   >Home</a
                 >
                 <a href="terms.html" class="footer-link">Terms of Service</a>
-                <a href="services/faq.html" class="footer-link">FAQ</a>
+                <a href="pages/faq.html" class="footer-link">FAQ</a>
               </div>
             </div>
             <div class="w-col w-col-4">
@@ -1392,7 +1392,6 @@
       const url_string = window.location.href;
       const urlN = new URL(url_string);
       const userName = urlN.searchParams.get("user");
-      console.log("heyy");
       if (userName) {
         $("[insta-username]").text(userName);
       } else {
