@@ -1,0 +1,18 @@
+.testi-img {
+  width: 195px;
+  height: 220px;
+  object-fit: cover;
+  /* border-radius: 50%; */
+  overflow: hidden;
+  border-radius: 15px;
+  margin-bottom: 1.5em;
+}
+
+.testi-img.rounded {
+  border-radius: 50%;
+  object-fit: contain;
+}
+
+.mb-1 {
+  margin-bottom: 1em;
+}
