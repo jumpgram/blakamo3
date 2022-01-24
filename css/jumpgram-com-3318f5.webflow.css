@@ -17,7 +17,7 @@
 }
 
 .w-checkbox::before {
-  content: ' ';
+  content: " ";
   display: table;
   -ms-grid-column-span: 1;
   grid-column-end: 2;
@@ -30,7 +30,7 @@
 }
 
 .w-checkbox::after {
-  content: ' ';
+  content: " ";
   display: table;
   -ms-grid-column-span: 1;
   grid-column-end: 2;
@@ -79,7 +79,7 @@
   border-bottom-color: #3898ec;
   border-left-color: #3898ec;
   border-right-color: #3898ec;
-  background-image: url('https://d3e54v103j8qbb.cloudfront.net/static/custom-checkbox-checkmark.589d534424.svg');
+  background-image: url("https://d3e54v103j8qbb.cloudfront.net/static/custom-checkbox-checkmark.589d534424.svg");
   background-position: 50% 50%;
   background-size: cover;
   background-repeat: no-repeat;
@@ -99,7 +99,7 @@
   padding-bottom: 0px;
   padding-left: 0px;
   padding-right: 0px;
-  background-image: url('https://d3e54v103j8qbb.cloudfront.net/static/youtube-placeholder.2b05e7d68d.svg');
+  background-image: url("https://d3e54v103j8qbb.cloudfront.net/static/youtube-placeholder.2b05e7d68d.svg");
   background-size: cover;
   background-position: 50% 50%;
 }
@@ -348,7 +348,8 @@ blockquote {
   -webkit-align-items: center;
   -ms-flex-align: center;
   align-items: center;
-  background-image: url('../images/square-3.png'), url('../images/Square-5.png'), url('../images/square-3.png');
+  background-image: url("../images/square-3.png"), url("../images/Square-5.png"),
+    url("../images/square-3.png");
   background-position: 0px 86px, 50% 50%, 100% 0px;
   background-size: 14%, 6%, 8%;
   background-repeat: no-repeat, no-repeat, no-repeat;
@@ -362,7 +363,12 @@ blockquote {
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
-  background-image: linear-gradient(312deg, rgba(252, 111, 0, 0.96), rgba(140, 15, 255, 0.94)), url('../images/bady-qb-751620-unsplash-1.jpg');
+  background-image: linear-gradient(
+      312deg,
+      rgba(252, 111, 0, 0.96),
+      rgba(140, 15, 255, 0.94)
+    ),
+    url("../images/bady-qb-751620-unsplash-1.jpg");
   background-position: 0px 0px, 0px 76%;
   background-size: auto, cover;
   background-repeat: repeat, no-repeat;
@@ -597,7 +603,13 @@ blockquote {
   width: auto;
   margin-bottom: 20px;
   background-color: #0bf;
-  background-image: -webkit-gradient(linear, left top, right top, from(#ab0fff), color-stop(71%, #ff00f6));
+  background-image: -webkit-gradient(
+    linear,
+    left top,
+    right top,
+    from(#ab0fff),
+    color-stop(71%, #ff00f6)
+  );
   background-image: linear-gradient(90deg, #ab0fff, #ff00f6 71%);
 }
 
@@ -610,7 +622,13 @@ blockquote {
   margin-right: auto;
   margin-left: auto;
   padding-top: 12px;
-  background-image: -webkit-gradient(linear, left top, right top, from(#21e9ff), to(#f600ff));
+  background-image: -webkit-gradient(
+    linear,
+    left top,
+    right top,
+    from(#21e9ff),
+    to(#f600ff)
+  );
   background-image: linear-gradient(90deg, #21e9ff, #f600ff);
   box-shadow: 1px 1px 3px 0 #000;
   font-size: 30px;
@@ -636,7 +654,13 @@ blockquote {
   margin-left: 0px;
   padding: 10px;
   border-radius: 5px;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#ffc106), to(#ffc106));
+  background-image: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    from(#ffc106),
+    to(#ffc106)
+  );
   background-image: linear-gradient(180deg, #ffc106, #ffc106);
   box-shadow: 1px 1px 3px 0 #000;
   opacity: 1;
@@ -654,7 +678,13 @@ blockquote {
   margin-left: 10px;
   padding-right: 10px;
   padding-left: 10px;
-  background-image: -webkit-gradient(linear, left top, right top, from(#00e8f8), to(#ff29db));
+  background-image: -webkit-gradient(
+    linear,
+    left top,
+    right top,
+    from(#00e8f8),
+    to(#ff29db)
+  );
   background-image: linear-gradient(90deg, #00e8f8, #ff29db);
   font-size: 30px;
   line-height: 40px;
@@ -699,7 +729,7 @@ blockquote {
 .section.white.no-padding.they-say {
   padding-top: 100px;
   padding-bottom: 0px;
-  background-image: url('../images/Square-5.png');
+  background-image: url("../images/Square-5.png");
   background-position: 87% 25%;
   background-size: 4%;
   background-repeat: no-repeat;
@@ -731,7 +761,7 @@ blockquote {
   grid-template-rows: auto auto;
   border-top-style: solid;
   border-top-color: rgba(228, 236, 246, 0.8);
-  background-image: url('../images/square-2.png');
+  background-image: url("../images/square-2.png");
   background-position: 75% 92%;
   background-size: 80px;
   background-repeat: no-repeat;
@@ -743,14 +773,14 @@ blockquote {
 }
 
 .section.white.message {
-  background-image: url('../images/Square-5.png');
+  background-image: url("../images/Square-5.png");
   background-position: 100% -9px;
   background-size: 150px;
   background-repeat: no-repeat;
 }
 
 .section.white.pricing-table {
-  background-image: url('../images/Square-5.png'), url('../images/square-9.png');
+  background-image: url("../images/Square-5.png"), url("../images/square-9.png");
   background-position: 86% 8%, 0px 0px;
   background-size: 5%, 250px;
   background-repeat: no-repeat, no-repeat;
@@ -759,7 +789,7 @@ blockquote {
 .section.white.pattern {
   padding-right: 20px;
   padding-left: 20px;
-  background-image: url('../images/Square-5.png');
+  background-image: url("../images/Square-5.png");
   background-position: 94% 92px;
   background-size: 100px;
   background-repeat: no-repeat;
@@ -791,8 +821,20 @@ blockquote {
 }
 
 .section.white.image {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(hsla(0, 0%, 100%, 0.95)), to(hsla(0, 0%, 100%, 0.95))), url('../images/image5.jpg');
-  background-image: linear-gradient(180deg, hsla(0, 0%, 100%, 0.95), hsla(0, 0%, 100%, 0.95)), url('../images/image5.jpg');
+  background-image: -webkit-gradient(
+      linear,
+      left top,
+      left bottom,
+      from(hsla(0, 0%, 100%, 0.95)),
+      to(hsla(0, 0%, 100%, 0.95))
+    ),
+    url("../images/image5.jpg");
+  background-image: linear-gradient(
+      180deg,
+      hsla(0, 0%, 100%, 0.95),
+      hsla(0, 0%, 100%, 0.95)
+    ),
+    url("../images/image5.jpg");
   background-position: 0px 0px, 50% 50%;
   background-size: auto, cover;
   background-repeat: repeat, no-repeat;
@@ -809,7 +851,13 @@ blockquote {
   padding-top: 75px;
   padding-bottom: 75px;
   background-color: transparent;
-  background-image: linear-gradient(135deg, rgba(252, 111, 0, 0.93) 19%, rgba(255, 6, 156, 0.88)), url('../images/square-3.png'), url('../images/square-3.png'), linear-gradient(180deg, rgba(252, 111, 0, 0.94), rgba(252, 111, 0, 0.94));
+  background-image: linear-gradient(
+      135deg,
+      rgba(252, 111, 0, 0.93) 19%,
+      rgba(255, 6, 156, 0.88)
+    ),
+    url("../images/square-3.png"), url("../images/square-3.png"),
+    linear-gradient(180deg, rgba(252, 111, 0, 0.94), rgba(252, 111, 0, 0.94));
   background-position: 0px 0px, 100% 100%, 43px 0px, 0px 0px;
   background-size: auto, 150px, 250px, auto;
   background-repeat: repeat, no-repeat, no-repeat, repeat;
@@ -818,7 +866,13 @@ blockquote {
 
 .section.orange.services {
   padding: 120px 20px;
-  background-image: linear-gradient(135deg, rgba(252, 111, 0, 0.93) 29%, rgba(255, 6, 156, 0.9)), url('../images/square-3.png'), url('../images/square-3.png'), linear-gradient(180deg, #fc6f00, #fc6f00);
+  background-image: linear-gradient(
+      135deg,
+      rgba(252, 111, 0, 0.93) 29%,
+      rgba(255, 6, 156, 0.9)
+    ),
+    url("../images/square-3.png"), url("../images/square-3.png"),
+    linear-gradient(180deg, #fc6f00, #fc6f00);
   background-position: 0px 0px, 100% 100%, 43px 0px, 0px 0px;
   background-size: auto, 150px, 250px, auto;
   background-repeat: repeat, no-repeat, no-repeat, repeat;
@@ -831,7 +885,7 @@ blockquote {
 }
 
 .section.both-side-padding.single {
-  background-image: url('../images/43243.png');
+  background-image: url("../images/43243.png");
   background-position: 61px 0px;
   background-size: 10%;
   background-repeat: no-repeat;
@@ -887,7 +941,7 @@ blockquote {
 }
 
 .section.with-gradient {
-  background-image: url('../images/square-9.png');
+  background-image: url("../images/square-9.png");
   background-position: 100px 36px;
   background-size: 7%;
   background-repeat: no-repeat;
@@ -895,22 +949,36 @@ blockquote {
 
 .section.no-padding-bottom {
   padding-bottom: 0px;
-  background-image: radial-gradient(circle farthest-corner at 50% 50%, #f4f5f9, hsla(0, 0%, 100%, 0)), url('../images/square-9.png');
+  background-image: radial-gradient(
+      circle farthest-corner at 50% 50%,
+      #f4f5f9,
+      hsla(0, 0%, 100%, 0)
+    ),
+    url("../images/square-9.png");
   background-position: 0px 0px, 199px 0px;
   background-size: auto, 10%;
   background-repeat: repeat, no-repeat;
 }
 
 .section.no-padding-bottom.white {
-  background-image: radial-gradient(circle farthest-corner at 50% 50%, #f4f5f9, hsla(0, 0%, 100%, 0)), url('../images/square-9.png');
+  background-image: radial-gradient(
+      circle farthest-corner at 50% 50%,
+      #f4f5f9,
+      hsla(0, 0%, 100%, 0)
+    ),
+    url("../images/square-9.png");
   background-position: 0px 0px, 199px 0px;
   background-size: auto, 10%;
   background-repeat: repeat, no-repeat;
 }
 
 .section.white-gradient {
-  background-image: url('../images/squre-8.png'), url('../images/43243.png'), url('../images/Square-5.png'), url('../images/square-3.png'), -webkit-gradient(linear, left top, left bottom, color-stop(40%, #fff), to(transparent));
-  background-image: url('../images/squre-8.png'), url('../images/43243.png'), url('../images/Square-5.png'), url('../images/square-3.png'), linear-gradient(180deg, #fff 40%, transparent);
+  background-image: url("../images/squre-8.png"), url("../images/43243.png"),
+    url("../images/Square-5.png"), url("../images/square-3.png"),
+    -webkit-gradient(linear, left top, left bottom, color-stop(40%, #fff), to(transparent));
+  background-image: url("../images/squre-8.png"), url("../images/43243.png"),
+    url("../images/Square-5.png"), url("../images/square-3.png"),
+    linear-gradient(180deg, #fff 40%, transparent);
   background-position: 77px 9%, 82% 100%, 92% 90px, 51px 102%, 0px 0px;
   background-size: 8%, 140px, 4%, 8%, auto;
   background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, repeat;
@@ -929,7 +997,13 @@ blockquote {
   padding-top: 212px;
   padding-bottom: 51px;
   background-color: transparent;
-  background-image: linear-gradient(135deg, rgba(252, 111, 0, 0.93) 19%, rgba(255, 6, 156, 0.88)), url('../images/square-3.png'), url('../images/square-3.png'), linear-gradient(180deg, rgba(252, 111, 0, 0.94), rgba(252, 111, 0, 0.94));
+  background-image: linear-gradient(
+      135deg,
+      rgba(252, 111, 0, 0.93) 19%,
+      rgba(255, 6, 156, 0.88)
+    ),
+    url("../images/square-3.png"), url("../images/square-3.png"),
+    linear-gradient(180deg, rgba(252, 111, 0, 0.94), rgba(252, 111, 0, 0.94));
   background-position: 0px 0px, 100% 100%, 43px 0px, 0px 0px;
   background-size: auto, 150px, 250px, auto;
   background-repeat: repeat, no-repeat, no-repeat, repeat;
@@ -938,7 +1012,13 @@ blockquote {
 
 .section.orange-copy.services {
   padding: 120px 20px;
-  background-image: linear-gradient(135deg, rgba(252, 111, 0, 0.93) 29%, rgba(255, 6, 156, 0.9)), url('../images/square-3.png'), url('../images/square-3.png'), linear-gradient(180deg, #fc6f00, #fc6f00);
+  background-image: linear-gradient(
+      135deg,
+      rgba(252, 111, 0, 0.93) 29%,
+      rgba(255, 6, 156, 0.9)
+    ),
+    url("../images/square-3.png"), url("../images/square-3.png"),
+    linear-gradient(180deg, #fc6f00, #fc6f00);
   background-position: 0px 0px, 100% 100%, 43px 0px, 0px 0px;
   background-size: auto, 150px, 250px, auto;
   background-repeat: repeat, no-repeat, no-repeat, repeat;
@@ -952,7 +1032,13 @@ blockquote {
   padding-top: 80px;
   padding-bottom: 80px;
   background-color: transparent;
-  background-image: linear-gradient(135deg, rgba(252, 111, 0, 0.93) 19%, rgba(255, 6, 156, 0.88)), url('../images/square-3.png'), url('../images/square-3.png'), linear-gradient(180deg, rgba(252, 111, 0, 0.94), rgba(252, 111, 0, 0.94));
+  background-image: linear-gradient(
+      135deg,
+      rgba(252, 111, 0, 0.93) 19%,
+      rgba(255, 6, 156, 0.88)
+    ),
+    url("../images/square-3.png"), url("../images/square-3.png"),
+    linear-gradient(180deg, rgba(252, 111, 0, 0.94), rgba(252, 111, 0, 0.94));
   background-position: 0px 0px, 100% 100%, 43px 0px, 0px 0px;
   background-size: auto, 150px, 250px, auto;
   background-repeat: repeat, no-repeat, no-repeat, repeat;
@@ -961,7 +1047,13 @@ blockquote {
 
 .section.video-sec.services {
   padding: 120px 20px;
-  background-image: linear-gradient(135deg, rgba(252, 111, 0, 0.93) 29%, rgba(255, 6, 156, 0.9)), url('../images/square-3.png'), url('../images/square-3.png'), linear-gradient(180deg, #fc6f00, #fc6f00);
+  background-image: linear-gradient(
+      135deg,
+      rgba(252, 111, 0, 0.93) 29%,
+      rgba(255, 6, 156, 0.9)
+    ),
+    url("../images/square-3.png"), url("../images/square-3.png"),
+    linear-gradient(180deg, #fc6f00, #fc6f00);
   background-position: 0px 0px, 100% 100%, 43px 0px, 0px 0px;
   background-size: auto, 150px, 250px, auto;
   background-repeat: repeat, no-repeat, no-repeat, repeat;
@@ -1104,7 +1196,7 @@ blockquote {
   margin-top: 15px;
   margin-right: 10px;
   border-radius: 10px;
-  background-image: url('https://d3e54v103j8qbb.cloudfront.net/img/background-image.svg');
+  background-image: url("https://d3e54v103j8qbb.cloudfront.net/img/background-image.svg");
   background-position: 50% 50%;
   background-size: cover;
 }
@@ -1680,7 +1772,7 @@ blockquote {
   text-align: right;
 }
 
-.copyright.dorian-hoxha {
+.copyright.jumpgram {
   top: 0px;
   color: #7c8499;
   line-height: 23px;
@@ -1833,7 +1925,7 @@ blockquote {
   margin-left: auto;
   float: none;
   border-radius: 10px;
-  background-image: url('../images/cup.png');
+  background-image: url("../images/cup.png");
   background-position: 50% 50%;
   background-size: 50px;
   background-repeat: no-repeat;
@@ -1846,7 +1938,7 @@ blockquote {
   height: 60px;
   margin-right: auto;
   margin-left: auto;
-  background-image: url('../images/333.png');
+  background-image: url("../images/333.png");
   background-position: 50% 50%;
   background-size: 50px;
   background-repeat: no-repeat;
@@ -1858,7 +1950,7 @@ blockquote {
   height: 60px;
   margin-right: auto;
   margin-left: auto;
-  background-image: url('../images/111.png');
+  background-image: url("../images/111.png");
   background-position: 50% 50%;
   background-size: 50px;
   background-repeat: no-repeat;
@@ -1870,7 +1962,7 @@ blockquote {
   height: 60px;
   margin-right: auto;
   margin-left: auto;
-  background-image: url('../images/222.png');
+  background-image: url("../images/222.png");
   background-position: 50% 50%;
   background-size: 50px;
   background-repeat: no-repeat;
@@ -1962,7 +2054,7 @@ blockquote {
   margin-left: 2px;
   float: left;
   border-radius: 100px;
-  background-image: url('../images/team-3.jpg');
+  background-image: url("../images/team-3.jpg");
   background-position: 0px 0px;
   background-size: cover;
   background-repeat: no-repeat;
@@ -1975,30 +2067,30 @@ blockquote {
   height: 50px;
   float: none;
   border-radius: 10px;
-  background-image: url('../images/5b71ed1021c8aa33954afd93_matheus-ferrero-216385-1.jpg');
+  background-image: url("../images/5b71ed1021c8aa33954afd93_matheus-ferrero-216385-1.jpg");
   background-position: 50% 50%;
 }
 
 .testimonial-photo.small.second {
-  background-image: url('../images/team3.jpg');
+  background-image: url("../images/team3.jpg");
   background-position: 50% 50%;
 }
 
 .testimonial-photo.small.third {
-  background-image: url('../images/team-5.jpg');
+  background-image: url("../images/team-5.jpg");
 }
 
 .testimonial-photo.small.sixth {
-  background-image: url('../images/team-6.jpg');
+  background-image: url("../images/team-6.jpg");
   background-position: 50% 50%;
 }
 
 .testimonial-photo.small.fifth {
-  background-image: url('../images/team1.jpg');
+  background-image: url("../images/team1.jpg");
 }
 
 .testimonial-photo.small.fourth {
-  background-image: url('../images/team-2.jpg');
+  background-image: url("../images/team-2.jpg");
 }
 
 .testimonial-photo.in-tab {
@@ -2008,34 +2100,34 @@ blockquote {
 }
 
 .testimonial-photo.in-tab.fifth {
-  background-image: url('../images/team-6.jpg');
+  background-image: url("../images/team-6.jpg");
 }
 
 .testimonial-photo.in-tab.first {
-  background-image: url('../images/team1.jpg');
+  background-image: url("../images/team1.jpg");
 }
 
 .testimonial-photo.in-tab.second {
-  background-image: url('../images/team-2.jpg');
+  background-image: url("../images/team-2.jpg");
 }
 
 .testimonial-photo.in-tab.third {
   width: 200px;
   height: 200px;
-  background-image: url('../images/83275499_2523198607949556_1002816782773256192_n.jpg');
+  background-image: url("../images/83275499_2523198607949556_1002816782773256192_n.jpg");
 }
 
 .testimonial-photo.in-tab.third._3 {
-  background-image: url('../images/Screen-Shot-2020-03-25-at-9.58.36-PM-p-500.png');
+  background-image: url("../images/Screen-Shot-2020-03-25-at-9.58.36-PM-p-500.png");
 }
 
 .testimonial-photo.in-tab.third._2 {
-  background-image: url('../images/Screen-Shot-2020-03-25-at-10.04.24-PM-p-500-1.png');
+  background-image: url("../images/Screen-Shot-2020-03-25-at-10.04.24-PM-p-500-1.png");
   opacity: 1;
 }
 
 .testimonial-photo.in-tab.fourth {
-  background-image: url('../images/team-5.jpg');
+  background-image: url("../images/team-5.jpg");
 }
 
 .flex-row {
@@ -2172,7 +2264,7 @@ blockquote {
   border: 1px solid #e4e4e4;
   border-radius: 0px;
   background-color: transparent;
-  background-image: url('../images/instagram-1.png');
+  background-image: url("../images/instagram-1.png");
   background-position: 50% 50%;
   background-size: 13px;
   background-repeat: no-repeat;
@@ -2189,7 +2281,7 @@ blockquote {
 
 .social-icon-4.icon-instagram.white {
   border-color: #7c8499;
-  background-image: url('../images/instagram-logo_1instagram-logo.png');
+  background-image: url("../images/instagram-logo_1instagram-logo.png");
   background-size: 13px;
 }
 
@@ -2220,7 +2312,7 @@ blockquote {
   border: 1px solid #e4e4e4;
   border-radius: 0px 5px 5px 0px;
   background-color: transparent;
-  background-image: url('../images/twitter-logo-silhouette-2.png');
+  background-image: url("../images/twitter-logo-silhouette-2.png");
   background-position: 50% 50%;
   background-size: 13px;
   background-repeat: no-repeat;
@@ -2237,7 +2329,7 @@ blockquote {
 
 .social-icon-4.icon-twitter.go-top {
   border-radius: 5px;
-  background-image: url('../images/icons8-up-96_1icons8-up-96.png');
+  background-image: url("../images/icons8-up-96_1icons8-up-96.png");
   background-size: 16px;
 }
 
@@ -2248,7 +2340,7 @@ blockquote {
 .social-icon-4.icon-twitter.go-top.white {
   border-color: #7c8499;
   border-radius: 5px;
-  background-image: url('../images/icons8-up-96-1_1icons8-up-96 (1).png');
+  background-image: url("../images/icons8-up-96-1_1icons8-up-96 (1).png");
   background-size: 13px;
 }
 
@@ -2261,7 +2353,7 @@ blockquote {
   border-bottom-style: solid;
   border-top-right-radius: 5px;
   border-bottom-right-radius: 5px;
-  background-image: url('../images/twitter_1twitter.png');
+  background-image: url("../images/twitter_1twitter.png");
   background-size: 13px;
 }
 
@@ -2292,7 +2384,7 @@ blockquote {
   border: 1px solid #e4e4e4;
   border-radius: 0px;
   background-color: transparent;
-  background-image: url('../images/icon-5.png');
+  background-image: url("../images/icon-5.png");
   background-position: 50% 50%;
   background-size: 13px;
   background-repeat: no-repeat;
@@ -2309,7 +2401,7 @@ blockquote {
 
 .social-icon-4.icon-googleplus.white {
   border-color: #7c8499;
-  background-image: url('../images/google-plus_1google-plus.png');
+  background-image: url("../images/google-plus_1google-plus.png");
   background-size: 13px;
 }
 
@@ -2340,7 +2432,7 @@ blockquote {
   border: 1px solid #e4e4e4;
   border-radius: 5px 0px 0px 5px;
   background-color: transparent;
-  background-image: url('../images/facebook-logo-Black.svg');
+  background-image: url("../images/facebook-logo-Black.svg");
   background-position: 50% 50%;
   background-size: 13px;
   background-repeat: no-repeat;
@@ -2359,7 +2451,7 @@ blockquote {
   border-color: #7c8499;
   border-top-left-radius: 5px;
   border-bottom-left-radius: 5px;
-  background-image: url('../images/icons8-facebook-f-96_1icons8-facebook-f-96.png');
+  background-image: url("../images/icons8-facebook-f-96_1icons8-facebook-f-96.png");
   background-size: 13px;
 }
 
@@ -2390,7 +2482,7 @@ blockquote {
   border: 1px solid #e4e4e4;
   border-radius: 5px 0px 0px 5px;
   background-color: #fff;
-  background-image: url('../images/facebook-logo-Black.svg');
+  background-image: url("../images/facebook-logo-Black.svg");
   background-position: 50% 50%;
   background-size: 13px;
   background-repeat: no-repeat;
@@ -2417,7 +2509,7 @@ blockquote {
   border: 1px solid #e4e4e4;
   border-radius: 0px;
   background-color: #fff;
-  background-image: url('../images/instagram-1.png');
+  background-image: url("../images/instagram-1.png");
   background-position: 50% 50%;
   background-size: 13px;
   background-repeat: no-repeat;
@@ -2442,7 +2534,7 @@ blockquote {
   border: 1px solid #e4e4e4;
   border-radius: 0px;
   background-color: #fff;
-  background-image: url('../images/icon-5.png');
+  background-image: url("../images/icon-5.png");
   background-position: 50% 50%;
   background-size: 13px;
   background-repeat: no-repeat;
@@ -2467,7 +2559,7 @@ blockquote {
   border: 1px solid #e4e4e4;
   border-radius: 0px 5px 5px 0px;
   background-color: #fff;
-  background-image: url('../images/twitter-logo-silhouette-2.png');
+  background-image: url("../images/twitter-logo-silhouette-2.png");
   background-position: 50% 50%;
   background-size: 13px;
   background-repeat: no-repeat;
@@ -2645,13 +2737,13 @@ blockquote {
   display: inline-block;
   width: 100%;
   height: 350px;
-  background-image: url('../images/johan-mouchet-196729-unsplash.jpg');
+  background-image: url("../images/johan-mouchet-196729-unsplash.jpg");
   background-position: 50% 50%;
   background-size: cover;
 }
 
 .portfolio-image-div._3 {
-  background-image: url('../images/kevin-bhagat-343433-unsplash.jpg');
+  background-image: url("../images/kevin-bhagat-343433-unsplash.jpg");
 }
 
 .overlay-portfolio {
@@ -2665,7 +2757,11 @@ blockquote {
   padding-right: 0px;
   padding-left: 0px;
   background-color: transparent;
-  background-image: linear-gradient(135deg, rgba(0, 77, 240, 0.92), rgba(0, 233, 94, 0.9));
+  background-image: linear-gradient(
+    135deg,
+    rgba(0, 77, 240, 0.92),
+    rgba(0, 233, 94, 0.9)
+  );
 }
 
 .overlay-portfolio.other-color {
@@ -2690,8 +2786,18 @@ blockquote {
   -ms-flex-align: center;
   align-items: center;
   background-color: transparent;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.35)), to(rgba(0, 0, 0, 0.35)));
-  background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35));
+  background-image: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    from(rgba(0, 0, 0, 0.35)),
+    to(rgba(0, 0, 0, 0.35))
+  );
+  background-image: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0.35),
+    rgba(0, 0, 0, 0.35)
+  );
   text-align: center;
 }
 
@@ -2743,7 +2849,12 @@ blockquote {
   padding-top: 60px;
   padding-bottom: 60px;
   background-color: #fc6f00;
-  background-image: linear-gradient(135deg, rgba(252, 111, 0, 0.9) 28%, rgba(255, 6, 156, 0.9)), url('../images/square-9.png'), url('../images/square-2.png');
+  background-image: linear-gradient(
+      135deg,
+      rgba(252, 111, 0, 0.9) 28%,
+      rgba(255, 6, 156, 0.9)
+    ),
+    url("../images/square-9.png"), url("../images/square-2.png");
   background-position: 0px 0px, 0px 0px, 100% 100%;
   background-size: auto, 250px, 100px;
   background-repeat: repeat, no-repeat, no-repeat;
@@ -2897,7 +3008,7 @@ blockquote {
   border-style: none;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
-  background-image: url('https://d3e54v103j8qbb.cloudfront.net/img/background-image.svg');
+  background-image: url("https://d3e54v103j8qbb.cloudfront.net/img/background-image.svg");
   background-position: 50% 50%;
   background-size: cover;
   background-repeat: no-repeat;
@@ -2971,7 +3082,7 @@ blockquote {
 
 .banner {
   height: 800px;
-  background-image: url('../images/1234.png'), none;
+  background-image: url("../images/1234.png"), none;
   background-position: 100% 50%, 50% 50%;
   background-size: cover, cover;
 }
@@ -2979,8 +3090,16 @@ blockquote {
 .banner.fourth {
   height: 100vh;
   border-bottom: 1px none #fc6f00;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(hsla(0, 0%, 100%, 0.78)), to(#f4f5f9)), url('../images/nesa-by-makers-736784-unsplash.jpg');
-  background-image: linear-gradient(180deg, hsla(0, 0%, 100%, 0.78), #f4f5f9), url('../images/nesa-by-makers-736784-unsplash.jpg');
+  background-image: -webkit-gradient(
+      linear,
+      left top,
+      left bottom,
+      from(hsla(0, 0%, 100%, 0.78)),
+      to(#f4f5f9)
+    ),
+    url("../images/nesa-by-makers-736784-unsplash.jpg");
+  background-image: linear-gradient(180deg, hsla(0, 0%, 100%, 0.78), #f4f5f9),
+    url("../images/nesa-by-makers-736784-unsplash.jpg");
   background-position: 0px 0px, 50% 50%;
   background-size: auto, cover;
   background-repeat: repeat, repeat;
@@ -3110,7 +3229,7 @@ blockquote {
   margin-bottom: 0px;
   margin-left: 80px;
   border-radius: 10px;
-  background-image: url('https://d3e54v103j8qbb.cloudfront.net/img/background-image.svg');
+  background-image: url("https://d3e54v103j8qbb.cloudfront.net/img/background-image.svg");
   background-position: 50% 50%;
   background-size: cover;
 }
@@ -3149,7 +3268,7 @@ blockquote {
   -ms-flex-align: center;
   align-items: center;
   border-radius: 0px;
-  background-image: url('../images/nordwood-themes-483520-1.jpg');
+  background-image: url("../images/nordwood-themes-483520-1.jpg");
   background-position: 50% 50%;
   background-size: cover;
   text-align: center;
@@ -3205,7 +3324,7 @@ blockquote {
   width: 100%;
   height: 450px;
   background-color: #1f2532;
-  background-image: url('https://d3e54v103j8qbb.cloudfront.net/img/background-image.svg');
+  background-image: url("https://d3e54v103j8qbb.cloudfront.net/img/background-image.svg");
   background-position: 50% 50%;
   background-size: cover;
   color: #1f2532;
@@ -3250,7 +3369,8 @@ blockquote {
   padding-bottom: 50px;
   border-style: none solid none none;
   border-width: 1px;
-  border-color: rgba(234, 240, 253, 0.27) #e7e7e7 rgba(234, 240, 253, 0.27) rgba(234, 240, 253, 0.27);
+  border-color: rgba(234, 240, 253, 0.27) #e7e7e7 rgba(234, 240, 253, 0.27)
+    rgba(234, 240, 253, 0.27);
   background-color: hsla(0, 0%, 100%, 0.55);
   opacity: 1;
   text-align: center;
@@ -3378,7 +3498,8 @@ blockquote {
   -webkit-transition: opacity 300ms ease, -webkit-transform 200ms ease;
   transition: opacity 300ms ease, -webkit-transform 200ms ease;
   transition: opacity 300ms ease, transform 200ms ease;
-  transition: opacity 300ms ease, transform 200ms ease, -webkit-transform 200ms ease;
+  transition: opacity 300ms ease, transform 200ms ease,
+    -webkit-transform 200ms ease;
   font-size: 12px;
 }
 
@@ -3506,7 +3627,7 @@ blockquote {
   border: 1px solid #e4ecf6;
   border-radius: 5px;
   background-color: rgba(244, 245, 249, 0.5);
-  background-image: url('../images/icons8-contacts-64_1icons8-contacts-64.png');
+  background-image: url("../images/icons8-contacts-64_1icons8-contacts-64.png");
   background-position: 7px 48%;
   background-size: 20px;
   background-repeat: no-repeat;
@@ -3516,7 +3637,7 @@ blockquote {
 
 .text-field-3.contact-form.gray.email {
   padding-left: 40px;
-  background-image: url('../images/icons8-secured-letter-64_1icons8-secured-letter-64.png');
+  background-image: url("../images/icons8-secured-letter-64_1icons8-secured-letter-64.png");
   background-size: 20px;
 }
 
@@ -3534,19 +3655,19 @@ blockquote {
 }
 
 .text-field-3.contact-form.gray.budget {
-  background-image: url('../images/icons8-coins-80_1icons8-coins-80.png');
+  background-image: url("../images/icons8-coins-80_1icons8-coins-80.png");
   background-size: 20px;
 }
 
 .text-field-3.contact-form.gray.subject {
-  background-image: url('../images/icons8-box-64_1icons8-box-64.png');
+  background-image: url("../images/icons8-box-64_1icons8-box-64.png");
   background-size: 20px;
   -o-object-fit: fill;
   object-fit: fill;
 }
 
 .text-field-3.contact-form.gray.timeline {
-  background-image: url('../images/icons8-time-80_1icons8-time-80.png');
+  background-image: url("../images/icons8-time-80_1icons8-time-80.png");
   background-size: 20px;
 }
 
@@ -3653,7 +3774,13 @@ blockquote {
   -webkit-align-items: center;
   -ms-flex-align: center;
   align-items: center;
-  background-image: linear-gradient(135deg, rgba(252, 111, 0, 0.95), rgba(255, 6, 156, 0.92)), url('../images/bady-qb-751620-unsplash-1.jpg'), linear-gradient(135deg, #fc6f00, #ff069c);
+  background-image: linear-gradient(
+      135deg,
+      rgba(252, 111, 0, 0.95),
+      rgba(255, 6, 156, 0.92)
+    ),
+    url("../images/bady-qb-751620-unsplash-1.jpg"),
+    linear-gradient(135deg, #fc6f00, #ff069c);
   background-position: 0px 0px, 50% 50%, 0px 0px;
   background-size: auto, cover, auto;
   -webkit-transform: translate(0px, 0px);
@@ -3664,7 +3791,7 @@ blockquote {
 .banner-home.half.second {
   height: 100vh;
   background-color: #f4f5f9;
-  background-image: url('../images/43243.png');
+  background-image: url("../images/43243.png");
   background-position: 90% 27%;
   background-size: 140px;
   background-repeat: no-repeat;
@@ -3688,7 +3815,10 @@ blockquote {
   -webkit-align-items: center;
   -ms-flex-align: center;
   align-items: center;
-  background-image: url('https://d3e54v103j8qbb.cloudfront.net/img/background-image.svg'), linear-gradient(135deg, rgba(252, 111, 0, 0.95), rgba(255, 6, 156, 0.92)), url('../images/bady-qb-751620-unsplash-1.jpg'), linear-gradient(135deg, #fc6f00, #ff069c);
+  background-image: url("https://d3e54v103j8qbb.cloudfront.net/img/background-image.svg"),
+    linear-gradient(135deg, rgba(252, 111, 0, 0.95), rgba(255, 6, 156, 0.92)),
+    url("../images/bady-qb-751620-unsplash-1.jpg"),
+    linear-gradient(135deg, #fc6f00, #ff069c);
   background-position: 0px 0px, 0px 0px, 50% 50%, 0px 0px;
   background-size: auto, auto, cover, auto;
   -webkit-transform: translate(0px, 0px);
@@ -3701,7 +3831,7 @@ blockquote {
 .banner-home.homepage-responsive.second {
   height: 100vh;
   background-color: #f4f5f9;
-  background-image: url('../images/43243.png');
+  background-image: url("../images/43243.png");
   background-position: 90% 27%;
   background-size: 140px;
   background-repeat: no-repeat;
@@ -3729,7 +3859,13 @@ blockquote {
   -webkit-align-items: center;
   -ms-flex-align: center;
   align-items: center;
-  background-image: linear-gradient(135deg, rgba(252, 111, 0, 0.95), rgba(255, 6, 156, 0.92)), url('../images/bady-qb-751620-unsplash-1.jpg'), linear-gradient(135deg, #fc6f00, #ff069c);
+  background-image: linear-gradient(
+      135deg,
+      rgba(252, 111, 0, 0.95),
+      rgba(255, 6, 156, 0.92)
+    ),
+    url("../images/bady-qb-751620-unsplash-1.jpg"),
+    linear-gradient(135deg, #fc6f00, #ff069c);
   background-position: 0px 0px, 50% 50%, 0px 0px;
   background-size: auto, cover, auto;
   -webkit-transform: translate(0px, 0px);
@@ -3982,8 +4118,12 @@ blockquote {
 .about-section {
   padding-top: 180px;
   padding-bottom: 90px;
-  background-image: url('../images/43243.png'), url('../images/3535415.png'), -webkit-gradient(linear, left top, left bottom, from(hsla(0, 0%, 100%, 0.81)), to(hsla(0, 0%, 100%, 0.81))), url('../images/silvio-kundt-65518-unsplash.jpg');
-  background-image: url('../images/43243.png'), url('../images/3535415.png'), linear-gradient(180deg, hsla(0, 0%, 100%, 0.81), hsla(0, 0%, 100%, 0.81)), url('../images/silvio-kundt-65518-unsplash.jpg');
+  background-image: url("../images/43243.png"), url("../images/3535415.png"),
+    -webkit-gradient(linear, left top, left bottom, from(hsla(0, 0%, 100%, 0.81)), to(hsla(0, 0%, 100%, 0.81))),
+    url("../images/silvio-kundt-65518-unsplash.jpg");
+  background-image: url("../images/43243.png"), url("../images/3535415.png"),
+    linear-gradient(180deg, hsla(0, 0%, 100%, 0.81), hsla(0, 0%, 100%, 0.81)),
+    url("../images/silvio-kundt-65518-unsplash.jpg");
   background-position: 100% 102%, 0px 101%, 0px 0px, 50% 50%;
   background-size: 200px, 200px, auto, cover;
   background-repeat: no-repeat, no-repeat, repeat, repeat;
@@ -3991,8 +4131,20 @@ blockquote {
 }
 
 .about-section.first {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(hsla(0, 0%, 100%, 0.81)), to(hsla(0, 0%, 100%, 0.81))), url('../images/silvio-kundt-65518-unsplash.jpg');
-  background-image: linear-gradient(180deg, hsla(0, 0%, 100%, 0.81), hsla(0, 0%, 100%, 0.81)), url('../images/silvio-kundt-65518-unsplash.jpg');
+  background-image: -webkit-gradient(
+      linear,
+      left top,
+      left bottom,
+      from(hsla(0, 0%, 100%, 0.81)),
+      to(hsla(0, 0%, 100%, 0.81))
+    ),
+    url("../images/silvio-kundt-65518-unsplash.jpg");
+  background-image: linear-gradient(
+      180deg,
+      hsla(0, 0%, 100%, 0.81),
+      hsla(0, 0%, 100%, 0.81)
+    ),
+    url("../images/silvio-kundt-65518-unsplash.jpg");
   background-position: 0px 0px, 50% 50%;
   background-size: auto, cover;
   background-repeat: repeat, repeat;
@@ -4002,8 +4154,16 @@ blockquote {
 .about-section.first.white-overlay {
   padding-top: 181px;
   padding-bottom: 0px;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(hsla(0, 0%, 94.5%, 0.81)), to(#fff)), url('../images/silvio-kundt-65518-unsplash.jpg');
-  background-image: linear-gradient(180deg, hsla(0, 0%, 94.5%, 0.81), #fff), url('../images/silvio-kundt-65518-unsplash.jpg');
+  background-image: -webkit-gradient(
+      linear,
+      left top,
+      left bottom,
+      from(hsla(0, 0%, 94.5%, 0.81)),
+      to(#fff)
+    ),
+    url("../images/silvio-kundt-65518-unsplash.jpg");
+  background-image: linear-gradient(180deg, hsla(0, 0%, 94.5%, 0.81), #fff),
+    url("../images/silvio-kundt-65518-unsplash.jpg");
   background-position: 0px 0px, 50% 50%;
   background-size: auto, cover;
   background-repeat: repeat, repeat;
@@ -4013,8 +4173,18 @@ blockquote {
 .about-section.service {
   padding-top: 198px;
   padding-bottom: 20px;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(hsla(0, 0%, 100%, 0.25)), to(#f4f5f9)), -webkit-gradient(linear, left top, left bottom, from(hsla(0, 0%, 100%, 0.81)), to(hsla(0, 0%, 100%, 0.81))), url('../images/silvio-kundt-65518-unsplash.jpg');
-  background-image: linear-gradient(180deg, hsla(0, 0%, 100%, 0.25), #f4f5f9), linear-gradient(180deg, hsla(0, 0%, 100%, 0.81), hsla(0, 0%, 100%, 0.81)), url('../images/silvio-kundt-65518-unsplash.jpg');
+  background-image: -webkit-gradient(
+      linear,
+      left top,
+      left bottom,
+      from(hsla(0, 0%, 100%, 0.25)),
+      to(#f4f5f9)
+    ),
+    -webkit-gradient(linear, left top, left bottom, from(hsla(0, 0%, 100%, 0.81)), to(hsla(0, 0%, 100%, 0.81))),
+    url("../images/silvio-kundt-65518-unsplash.jpg");
+  background-image: linear-gradient(180deg, hsla(0, 0%, 100%, 0.25), #f4f5f9),
+    linear-gradient(180deg, hsla(0, 0%, 100%, 0.81), hsla(0, 0%, 100%, 0.81)),
+    url("../images/silvio-kundt-65518-unsplash.jpg");
   background-position: 0px 0px, 0px 0px, 50% 50%;
   background-size: auto, auto, cover;
   background-repeat: repeat, repeat, repeat;
@@ -4022,8 +4192,26 @@ blockquote {
 }
 
 .about-section.blog {
-  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(11%, hsla(0, 0%, 100%, 0)), color-stop(88%, #f4f5f9)), -webkit-gradient(linear, left top, left bottom, from(rgba(244, 245, 249, 0.77)), to(rgba(244, 245, 249, 0.77))), url('../images/bady-qb-751620-unsplash-1.jpg');
-  background-image: linear-gradient(180deg, hsla(0, 0%, 100%, 0) 11%, #f4f5f9 88%), linear-gradient(180deg, rgba(244, 245, 249, 0.77), rgba(244, 245, 249, 0.77)), url('../images/bady-qb-751620-unsplash-1.jpg');
+  background-image: -webkit-gradient(
+      linear,
+      left top,
+      left bottom,
+      color-stop(11%, hsla(0, 0%, 100%, 0)),
+      color-stop(88%, #f4f5f9)
+    ),
+    -webkit-gradient(linear, left top, left bottom, from(rgba(244, 245, 249, 0.77)), to(rgba(244, 245, 249, 0.77))),
+    url("../images/bady-qb-751620-unsplash-1.jpg");
+  background-image: linear-gradient(
+      180deg,
+      hsla(0, 0%, 100%, 0) 11%,
+      #f4f5f9 88%
+    ),
+    linear-gradient(
+      180deg,
+      rgba(244, 245, 249, 0.77),
+      rgba(244, 245, 249, 0.77)
+    ),
+    url("../images/bady-qb-751620-unsplash-1.jpg");
   background-position: 0px 0px, 0px 0px, 50% 0px;
   background-size: auto, auto, cover;
   background-repeat: repeat, repeat, no-repeat;
@@ -4031,8 +4219,22 @@ blockquote {
 }
 
 .about-section.blog.white-overlay {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(hsla(0, 0%, 100%, 0)), to(#fff)), -webkit-gradient(linear, left top, left bottom, from(rgba(244, 245, 249, 0.77)), to(rgba(244, 245, 249, 0.77))), url('../images/bady-qb-751620-unsplash-1.jpg');
-  background-image: linear-gradient(180deg, hsla(0, 0%, 100%, 0), #fff), linear-gradient(180deg, rgba(244, 245, 249, 0.77), rgba(244, 245, 249, 0.77)), url('../images/bady-qb-751620-unsplash-1.jpg');
+  background-image: -webkit-gradient(
+      linear,
+      left top,
+      left bottom,
+      from(hsla(0, 0%, 100%, 0)),
+      to(#fff)
+    ),
+    -webkit-gradient(linear, left top, left bottom, from(rgba(244, 245, 249, 0.77)), to(rgba(244, 245, 249, 0.77))),
+    url("../images/bady-qb-751620-unsplash-1.jpg");
+  background-image: linear-gradient(180deg, hsla(0, 0%, 100%, 0), #fff),
+    linear-gradient(
+      180deg,
+      rgba(244, 245, 249, 0.77),
+      rgba(244, 245, 249, 0.77)
+    ),
+    url("../images/bady-qb-751620-unsplash-1.jpg");
   background-position: 0px 0px, 0px 0px, 50% 0px;
   background-size: auto, auto, cover;
   background-repeat: repeat, repeat, no-repeat;
@@ -4042,8 +4244,20 @@ blockquote {
 .about-section.blog.white-overlay.contact {
   padding-top: 234px;
   padding-bottom: 0px;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(hsla(0, 0%, 100%, 0)), color-stop(71%, #fff)), -webkit-gradient(linear, left top, left bottom, from(rgba(244, 245, 249, 0.77)), to(rgba(244, 245, 249, 0.77)));
-  background-image: linear-gradient(180deg, hsla(0, 0%, 100%, 0), #fff 71%), linear-gradient(180deg, rgba(244, 245, 249, 0.77), rgba(244, 245, 249, 0.77));
+  background-image: -webkit-gradient(
+      linear,
+      left top,
+      left bottom,
+      from(hsla(0, 0%, 100%, 0)),
+      color-stop(71%, #fff)
+    ),
+    -webkit-gradient(linear, left top, left bottom, from(rgba(244, 245, 249, 0.77)), to(rgba(244, 245, 249, 0.77)));
+  background-image: linear-gradient(180deg, hsla(0, 0%, 100%, 0), #fff 71%),
+    linear-gradient(
+      180deg,
+      rgba(244, 245, 249, 0.77),
+      rgba(244, 245, 249, 0.77)
+    );
   background-position: 0px 0px, 0px 0px;
   background-size: auto, auto;
   background-repeat: repeat, repeat;
@@ -4096,7 +4310,8 @@ blockquote {
   right: 0px;
   bottom: 0px;
   border-radius: 10px;
-  -webkit-transition: opacity 400ms ease, background-color 400ms ease, all 400ms ease;
+  -webkit-transition: opacity 400ms ease, background-color 400ms ease,
+    all 400ms ease;
   transition: opacity 400ms ease, background-color 400ms ease, all 400ms ease;
 }
 
@@ -4173,8 +4388,16 @@ blockquote {
 }
 
 .banner-hero.fifth {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(235, 236, 241, 0.75)), to(#f4f5f9)), url('../images/3535415.png'), url('../images/43243.png');
-  background-image: linear-gradient(180deg, rgba(235, 236, 241, 0.75), #f4f5f9), url('../images/3535415.png'), url('../images/43243.png');
+  background-image: -webkit-gradient(
+      linear,
+      left top,
+      left bottom,
+      from(rgba(235, 236, 241, 0.75)),
+      to(#f4f5f9)
+    ),
+    url("../images/3535415.png"), url("../images/43243.png");
+  background-image: linear-gradient(180deg, rgba(235, 236, 241, 0.75), #f4f5f9),
+    url("../images/3535415.png"), url("../images/43243.png");
   background-position: 0px 0px, 100% 101%, 0px 101%;
   background-size: auto, 200px, 200px;
   background-repeat: repeat, no-repeat, no-repeat;
@@ -4195,7 +4418,8 @@ blockquote {
   -ms-flex-align: center;
   align-items: center;
   background-color: #fc6f00;
-  background-image: url('../images/Subscribeww.png'), linear-gradient(135deg, #fc6f00 41%, #ff069c);
+  background-image: url("../images/Subscribeww.png"),
+    linear-gradient(135deg, #fc6f00 41%, #ff069c);
   background-position: 0px 0px, 0px 0px;
   background-size: cover, auto;
 }
@@ -4223,7 +4447,13 @@ blockquote {
   width: 8px;
   height: 8px;
   border-radius: 2px 2px 0px;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#ff069c), to(#fc6f00));
+  background-image: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    from(#ff069c),
+    to(#fc6f00)
+  );
   background-image: linear-gradient(180deg, #ff069c, #fc6f00);
 }
 
@@ -4523,15 +4753,39 @@ blockquote {
   -webkit-align-items: center;
   -ms-flex-align: center;
   align-items: center;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(hsla(0, 0%, 93.3%, 0.85)), to(hsla(0, 0%, 100%, 0.99))), url('../images/bady-qb-751620-unsplash-1.jpg');
-  background-image: linear-gradient(180deg, hsla(0, 0%, 93.3%, 0.85), hsla(0, 0%, 100%, 0.99)), url('../images/bady-qb-751620-unsplash-1.jpg');
+  background-image: -webkit-gradient(
+      linear,
+      left top,
+      left bottom,
+      from(hsla(0, 0%, 93.3%, 0.85)),
+      to(hsla(0, 0%, 100%, 0.99))
+    ),
+    url("../images/bady-qb-751620-unsplash-1.jpg");
+  background-image: linear-gradient(
+      180deg,
+      hsla(0, 0%, 93.3%, 0.85),
+      hsla(0, 0%, 100%, 0.99)
+    ),
+    url("../images/bady-qb-751620-unsplash-1.jpg");
   background-position: 0px 0px, 50% 0px;
   background-size: auto, cover;
 }
 
 .utility-page-wrap._404 {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(hsla(0, 0%, 100%, 0.9)), to(hsla(0, 0%, 100%, 0.9))), url('../images/rawpixel-594849-unsplash.jpg');
-  background-image: linear-gradient(180deg, hsla(0, 0%, 100%, 0.9), hsla(0, 0%, 100%, 0.9)), url('../images/rawpixel-594849-unsplash.jpg');
+  background-image: -webkit-gradient(
+      linear,
+      left top,
+      left bottom,
+      from(hsla(0, 0%, 100%, 0.9)),
+      to(hsla(0, 0%, 100%, 0.9))
+    ),
+    url("../images/rawpixel-594849-unsplash.jpg");
+  background-image: linear-gradient(
+      180deg,
+      hsla(0, 0%, 100%, 0.9),
+      hsla(0, 0%, 100%, 0.9)
+    ),
+    url("../images/rawpixel-594849-unsplash.jpg");
   background-position: 0px 0px, 50% 50%;
   background-size: auto, cover;
 }
@@ -4602,7 +4856,9 @@ blockquote {
   margin-bottom: 40px;
   margin-left: auto;
   border-radius: 5px;
-  background-image: url('../images/43243.png'), linear-gradient(135deg, rgba(252, 111, 0, 0.91) 34%, rgba(255, 6, 156, 0.9)), url('../images/21232144.jpg');
+  background-image: url("../images/43243.png"),
+    linear-gradient(135deg, rgba(252, 111, 0, 0.91) 34%, rgba(255, 6, 156, 0.9)),
+    url("../images/21232144.jpg");
   background-position: 100% 102%, 0px 0px, 50% 50%;
   background-size: 70px, auto, cover;
   background-repeat: no-repeat, repeat, repeat;
@@ -4693,7 +4949,7 @@ blockquote {
   padding-top: 30px;
   padding-right: 35%;
   padding-bottom: 30px;
-  background-image: url('../images/111.png');
+  background-image: url("../images/111.png");
   background-position: 98% 108%;
   background-size: 140px;
   background-repeat: no-repeat;
@@ -4701,20 +4957,20 @@ blockquote {
 
 .features-block.build.top.second {
   padding-left: 30px;
-  background-image: url('../images/222.png');
+  background-image: url("../images/222.png");
   background-size: 140px;
 }
 
 .features-block.build.top.third {
   padding-left: 30px;
-  background-image: url('../images/333.png');
+  background-image: url("../images/333.png");
   background-position: 100% 100%;
   background-size: 140px;
 }
 
 .features-block.build.top.fourth {
   padding-left: 30px;
-  background-image: url('../images/444.png');
+  background-image: url("../images/444.png");
   background-position: 99% -187%;
   background-size: 140px;
 }
@@ -4751,14 +5007,16 @@ blockquote {
   margin-left: auto;
   border-radius: 4px;
   background-color: transparent;
-  background-image: url('../images/icons8-idea-240.png'), linear-gradient(135deg, #fc6f00 27%, #da0000);
+  background-image: url("../images/icons8-idea-240.png"),
+    linear-gradient(135deg, #fc6f00 27%, #da0000);
   background-position: 50% 50%, 0px 0px;
   background-size: 38px, auto;
   background-repeat: no-repeat, repeat;
 }
 
 .features-icon-4.second {
-  background-image: url('../images/icons8-code-80_1icons8-code-80.png'), linear-gradient(135deg, #fc6f00 27%, #da0000);
+  background-image: url("../images/icons8-code-80_1icons8-code-80.png"),
+    linear-gradient(135deg, #fc6f00 27%, #da0000);
   background-size: 40px, auto;
 }
 
@@ -4768,7 +5026,8 @@ blockquote {
   margin-left: 0px;
   border-radius: 10px;
   background-color: #fff;
-  background-image: url('../images/icons8-code-80_1icons8-code-80.png'), linear-gradient(135deg, #0675ec, #8c0fff);
+  background-image: url("../images/icons8-code-80_1icons8-code-80.png"),
+    linear-gradient(135deg, #0675ec, #8c0fff);
   background-position: 50% 50%, 0px 0px;
   background-size: 40px, auto;
   background-repeat: no-repeat, repeat;
@@ -4777,7 +5036,7 @@ blockquote {
 
 .features-icon-4.second.left.tab {
   margin-bottom: 0px;
-  background-image: url('../images/icons8-support-512-1.png');
+  background-image: url("../images/icons8-support-512-1.png");
   background-position: 50% 50%;
   background-size: 32px;
   background-repeat: no-repeat;
@@ -4790,7 +5049,7 @@ blockquote {
   margin-bottom: 0px;
   border-radius: 10px;
   background-color: #ff0fd9;
-  background-image: url('../images/icons8-technical-support-64_1icons8-technical-support-64.png');
+  background-image: url("../images/icons8-technical-support-64_1icons8-technical-support-64.png");
   background-position: 50% 50%;
   background-size: 40px;
   background-repeat: no-repeat;
@@ -4802,8 +5061,10 @@ blockquote {
   top: -30px;
   margin-bottom: 0px;
   border-radius: 10px;
-  background-image: url('../images/instamiawhitelogo.png'), -webkit-gradient(linear, left top, left bottom, from(#2fd36e), to(#2fd36e));
-  background-image: url('../images/instamiawhitelogo.png'), linear-gradient(180deg, #2fd36e, #2fd36e);
+  background-image: url("../images/instamiawhitelogo.png"),
+    -webkit-gradient(linear, left top, left bottom, from(#2fd36e), to(#2fd36e));
+  background-image: url("../images/instamiawhitelogo.png"),
+    linear-gradient(180deg, #2fd36e, #2fd36e);
   background-position: 50% 50%, 0px 0px;
   background-size: 32px, auto;
   background-repeat: no-repeat, repeat;
@@ -4816,21 +5077,24 @@ blockquote {
   margin-bottom: 20px;
   margin-left: 0px;
   border-radius: 10px;
-  background-image: url('../images/icons8-idea-240.png'), linear-gradient(135deg, #ffaf06 27%, #fc6f00);
+  background-image: url("../images/icons8-idea-240.png"),
+    linear-gradient(135deg, #ffaf06 27%, #fc6f00);
   background-position: 50% 50%, 0px 0px;
   background-size: 38px, auto;
   background-repeat: no-repeat, repeat;
 }
 
 .features-icon-4.third.email {
-  background-image: url('../images/icons8-design-80-1_1icons8-design-80 (1).png'), linear-gradient(135deg, #ffaf06 27%, #fc6f00);
+  background-image: url("../images/icons8-design-80-1_1icons8-design-80 (1).png"),
+    linear-gradient(135deg, #ffaf06 27%, #fc6f00);
   background-size: 40px, auto;
 }
 
 .features-icon-4.left {
   margin-right: 0px;
   margin-left: 0px;
-  background-image: url('../images/icons8-idea-240.png'), linear-gradient(135deg, #0f9fff 27%, #063dec);
+  background-image: url("../images/icons8-idea-240.png"),
+    linear-gradient(135deg, #0f9fff 27%, #063dec);
   background-position: 50% 50%, 0px 0px;
   background-size: 38px, auto;
   background-repeat: no-repeat, repeat;
@@ -4841,7 +5105,8 @@ blockquote {
   margin-bottom: 20px;
   margin-left: 0px;
   border-radius: 10px;
-  background-image: url('../images/icons8-technical-support-64_1icons8-technical-support-64.png'), linear-gradient(135deg, #08daf6 20%, #0a8dc0);
+  background-image: url("../images/icons8-technical-support-64_1icons8-technical-support-64.png"),
+    linear-gradient(135deg, #08daf6 20%, #0a8dc0);
   background-size: 32px, auto;
 }
 
@@ -4851,7 +5116,7 @@ blockquote {
   margin-left: 0px;
   border-radius: 10px;
   background-color: #fff;
-  background-image: url('../images/icons8-design-64_1icons8-design-64.png');
+  background-image: url("../images/icons8-design-64_1icons8-design-64.png");
   background-position: 50% 50%;
   background-size: 32px;
   background-repeat: no-repeat;
@@ -4863,8 +5128,10 @@ blockquote {
   top: -30px;
   margin-bottom: 0px;
   border-radius: 10px;
-  background-image: url('../images/icons8-up-96-1_1icons8-up-96 (1).png'), -webkit-gradient(linear, left top, left bottom, from(#ffaf06), to(#ffaf06));
-  background-image: url('../images/icons8-up-96-1_1icons8-up-96 (1).png'), linear-gradient(180deg, #ffaf06, #ffaf06);
+  background-image: url("../images/icons8-up-96-1_1icons8-up-96 (1).png"),
+    -webkit-gradient(linear, left top, left bottom, from(#ffaf06), to(#ffaf06));
+  background-image: url("../images/icons8-up-96-1_1icons8-up-96 (1).png"),
+    linear-gradient(180deg, #ffaf06, #ffaf06);
   background-position: 50% 50%, 0px 0px;
   background-size: 40px, auto;
   background-repeat: no-repeat, repeat;
@@ -4878,7 +5145,8 @@ blockquote {
   display: block;
   margin-bottom: 20px;
   border-radius: 10px;
-  background-image: url('../images/icons8-mobile-80-1_1icons8-mobile-80 (1).png'), linear-gradient(135deg, #fc6f00 27%, #ac0707);
+  background-image: url("../images/icons8-mobile-80-1_1icons8-mobile-80 (1).png"),
+    linear-gradient(135deg, #fc6f00 27%, #ac0707);
   background-position: 50% 50%, 0px 0px;
   background-size: 40px, auto;
   background-repeat: no-repeat, repeat;
@@ -4887,7 +5155,7 @@ blockquote {
 .features-icon-4.first.left.tab {
   margin-bottom: 0px;
   background-color: #fff;
-  background-image: url('../images/icons8-touchscreen-80-1_1icons8-touchscreen-80 (1).png');
+  background-image: url("../images/icons8-touchscreen-80-1_1icons8-touchscreen-80 (1).png");
   background-position: 50% 50%;
   background-size: 40px;
   background-repeat: no-repeat;
@@ -4898,7 +5166,8 @@ blockquote {
   position: relative;
   top: -30px;
   margin-bottom: 0px;
-  background-image: url('../images/icons8-idea-240.png'), linear-gradient(135deg, #fc6f00 27%, #da0000);
+  background-image: url("../images/icons8-idea-240.png"),
+    linear-gradient(135deg, #fc6f00 27%, #da0000);
   background-size: 32px, auto;
 }
 
@@ -4906,7 +5175,8 @@ blockquote {
   position: relative;
   top: -30px;
   margin-bottom: 10px;
-  background-image: url('../images/icons8-technical-support-64_1icons8-technical-support-64.png'), linear-gradient(135deg, #2985fa 27%, #0167d4);
+  background-image: url("../images/icons8-technical-support-64_1icons8-technical-support-64.png"),
+    linear-gradient(135deg, #2985fa 27%, #0167d4);
   background-size: 32px, auto;
 }
 
@@ -4915,8 +5185,10 @@ blockquote {
   top: -30px;
   margin-bottom: 0px;
   border-radius: 10px;
-  background-image: url('../images/icons8-coins-80_1icons8-coins-80.png'), -webkit-gradient(linear, left top, left bottom, from(#8c0fff), to(#8c0fff));
-  background-image: url('../images/icons8-coins-80_1icons8-coins-80.png'), linear-gradient(180deg, #8c0fff, #8c0fff);
+  background-image: url("../images/icons8-coins-80_1icons8-coins-80.png"),
+    -webkit-gradient(linear, left top, left bottom, from(#8c0fff), to(#8c0fff));
+  background-image: url("../images/icons8-coins-80_1icons8-coins-80.png"),
+    linear-gradient(180deg, #8c0fff, #8c0fff);
   background-position: 50% 50%, 0px 0px;
   background-size: 38px, auto;
   background-repeat: no-repeat, repeat;
@@ -4927,14 +5199,16 @@ blockquote {
   position: static;
   margin-bottom: 20px;
   border-radius: 10px;
-  background-image: url('../images/icons8-design-80-1_1icons8-design-80 (1).png'), linear-gradient(135deg, #8050fc 27%, #1f00ff);
+  background-image: url("../images/icons8-design-80-1_1icons8-design-80 (1).png"),
+    linear-gradient(135deg, #8050fc 27%, #1f00ff);
   background-position: 50% 50%, 0px 0px;
   background-size: 38px, auto;
   background-repeat: no-repeat, repeat;
 }
 
 .features-icon-4.fifth.support {
-  background-image: url('../images/icons8-technical-support-64_1icons8-technical-support-64.png'), linear-gradient(135deg, #8050fc 27%, #1f00ff);
+  background-image: url("../images/icons8-technical-support-64_1icons8-technical-support-64.png"),
+    linear-gradient(135deg, #8050fc 27%, #1f00ff);
   background-size: 32px, auto;
 }
 
@@ -4967,7 +5241,7 @@ blockquote {
   border-color: rgba(228, 236, 246, 0.57);
   border-radius: 5px;
   background-color: #fff;
-  background-image: url('../images/icons8-edit-80_1icons8-edit-80.png');
+  background-image: url("../images/icons8-edit-80_1icons8-edit-80.png");
   background-position: 8px 8px;
   background-size: 23px;
   background-repeat: no-repeat;
@@ -5215,7 +5489,8 @@ blockquote {
   -ms-flex-align: center;
   align-items: center;
   border-radius: 4px;
-  background-image: url('../images/icons8-lock-96_1icons8-lock-96.png'), linear-gradient(135deg, #fc6f00, #ff069c);
+  background-image: url("../images/icons8-lock-96_1icons8-lock-96.png"),
+    linear-gradient(135deg, #fc6f00, #ff069c);
   background-position: 50% 50%, 0px 0px;
   background-size: 30px, auto;
   background-repeat: no-repeat, repeat;
@@ -5409,21 +5684,22 @@ blockquote {
 .image-div {
   width: 100px;
   height: 100px;
-  background-image: url('../images/shutterstock_178724276.jpg');
+  background-image: url("../images/shutterstock_178724276.jpg");
   background-position: 50% 50%;
   background-size: cover;
 }
 
 .image-div.two {
-  background-image: url('../images/123134.jpg');
+  background-image: url("../images/123134.jpg");
 }
 
 .image-div.third {
-  background-image: url('../images/12313ee4.jpg');
+  background-image: url("../images/12313ee4.jpg");
 }
 
 .image-div.mock-ups {
-  background-image: url('../images/Video-white.png'), linear-gradient(135deg, #fc6f00, #ff069c);
+  background-image: url("../images/Video-white.png"),
+    linear-gradient(135deg, #fc6f00, #ff069c);
   background-position: 50% 50%, 0px 0px;
   background-size: 80px, auto;
   background-repeat: no-repeat, repeat;
@@ -5433,7 +5709,7 @@ blockquote {
   width: 60px;
   height: 60px;
   margin-right: 20px;
-  background-image: url('../images/Dalai-1.jpg');
+  background-image: url("../images/Dalai-1.jpg");
   background-position: 50% 50%;
   background-size: cover;
   background-repeat: no-repeat;
@@ -5527,14 +5803,20 @@ blockquote {
   margin-bottom: 0px;
   border-top-left-radius: 30px;
   border-top-right-radius: 30px;
-  background-image: url('https://d3e54v103j8qbb.cloudfront.net/img/background-image.svg');
+  background-image: url("https://d3e54v103j8qbb.cloudfront.net/img/background-image.svg");
   background-position: 50% 50%;
   background-size: cover;
 }
 
 .blog-content-div {
   padding-top: 70px;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#fff), to(hsla(0, 0%, 100%, 0)));
+  background-image: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    from(#fff),
+    to(hsla(0, 0%, 100%, 0))
+  );
   background-image: linear-gradient(180deg, #fff, hsla(0, 0%, 100%, 0));
 }
 
@@ -5811,7 +6093,7 @@ blockquote {
   border-top: 1px none #e4e4e4;
   border-bottom: 1px none #e4e4e4;
   background-color: #f4f5f9;
-  background-image: url('../images/square-9.png');
+  background-image: url("../images/square-9.png");
   background-position: 199px 0px;
   background-size: 10%;
   background-repeat: no-repeat;
@@ -5954,7 +6236,7 @@ blockquote {
   -ms-flex-align: center;
   align-items: center;
   border-radius: 5px;
-  background-image: url('../images/lilly-rum-314276-unsplash.jpg');
+  background-image: url("../images/lilly-rum-314276-unsplash.jpg");
   background-position: 50% 50%;
   background-size: cover;
 }
@@ -6096,7 +6378,8 @@ blockquote {
   margin-bottom: 80px;
   border-style: none;
   background-color: transparent;
-  background-image: linear-gradient(135deg, #924af7 23%, #5f18c2), linear-gradient(180deg, #000, #fff);
+  background-image: linear-gradient(135deg, #924af7 23%, #5f18c2),
+    linear-gradient(180deg, #000, #fff);
   text-align: center;
 }
 
@@ -6113,8 +6396,16 @@ blockquote {
   z-index: 5;
   height: 380px;
   border-radius: 10px;
-  background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.63)), to(transparent)), url('../images/5b71ed1021c8aa33954afd93_matheus-ferrero-216385-1.jpg');
-  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.63), transparent), url('../images/5b71ed1021c8aa33954afd93_matheus-ferrero-216385-1.jpg');
+  background-image: -webkit-gradient(
+      linear,
+      left bottom,
+      left top,
+      from(rgba(0, 0, 0, 0.63)),
+      to(transparent)
+    ),
+    url("../images/5b71ed1021c8aa33954afd93_matheus-ferrero-216385-1.jpg");
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.63), transparent),
+    url("../images/5b71ed1021c8aa33954afd93_matheus-ferrero-216385-1.jpg");
   background-position: 0px 0px, 50% 50%;
   background-size: auto, cover;
   -webkit-transform: translate(0px, -65px);
@@ -6127,18 +6418,42 @@ blockquote {
 }
 
 .team-new-image.second {
-  background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.63)), to(transparent)), url('../images/lucas-sankey-378674.jpg');
-  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.63), transparent), url('../images/lucas-sankey-378674.jpg');
+  background-image: -webkit-gradient(
+      linear,
+      left bottom,
+      left top,
+      from(rgba(0, 0, 0, 0.63)),
+      to(transparent)
+    ),
+    url("../images/lucas-sankey-378674.jpg");
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.63), transparent),
+    url("../images/lucas-sankey-378674.jpg");
 }
 
 .team-new-image.third {
-  background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.63)), to(transparent)), url('../images/erik-lucatero-310633.jpg');
-  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.63), transparent), url('../images/erik-lucatero-310633.jpg');
+  background-image: -webkit-gradient(
+      linear,
+      left bottom,
+      left top,
+      from(rgba(0, 0, 0, 0.63)),
+      to(transparent)
+    ),
+    url("../images/erik-lucatero-310633.jpg");
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.63), transparent),
+    url("../images/erik-lucatero-310633.jpg");
 }
 
 .team-new-image.fourth {
-  background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.63)), to(transparent)), url('../images/team-6.jpg');
-  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.63), transparent), url('../images/team-6.jpg');
+  background-image: -webkit-gradient(
+      linear,
+      left bottom,
+      left top,
+      from(rgba(0, 0, 0, 0.63)),
+      to(transparent)
+    ),
+    url("../images/team-6.jpg");
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.63), transparent),
+    url("../images/team-6.jpg");
 }
 
 .team-new-wrapper {
@@ -6185,22 +6500,46 @@ blockquote {
   width: 25%;
   height: 7px;
   float: left;
-  background-image: -webkit-gradient(linear, left top, right top, from(#fc6f00), to(#da0000));
+  background-image: -webkit-gradient(
+    linear,
+    left top,
+    right top,
+    from(#fc6f00),
+    to(#da0000)
+  );
   background-image: linear-gradient(90deg, #fc6f00, #da0000);
 }
 
 .div-line-color.second {
-  background-image: -webkit-gradient(linear, left top, right top, color-stop(27%, #ff0fd9), to(#b31bcf));
+  background-image: -webkit-gradient(
+    linear,
+    left top,
+    right top,
+    color-stop(27%, #ff0fd9),
+    to(#b31bcf)
+  );
   background-image: linear-gradient(90deg, #ff0fd9 27%, #b31bcf);
 }
 
 .div-line-color.third {
-  background-image: -webkit-gradient(linear, left top, right top, from(#2d92fd), to(#003dff));
+  background-image: -webkit-gradient(
+    linear,
+    left top,
+    right top,
+    from(#2d92fd),
+    to(#003dff)
+  );
   background-image: linear-gradient(90deg, #2d92fd, #003dff);
 }
 
 .div-line-color.fourth {
-  background-image: -webkit-gradient(linear, left top, right top, from(#49ff0f), to(#39c21f));
+  background-image: -webkit-gradient(
+    linear,
+    left top,
+    right top,
+    from(#49ff0f),
+    to(#39c21f)
+  );
   background-image: linear-gradient(90deg, #49ff0f, #39c21f);
 }
 
@@ -6258,34 +6597,34 @@ blockquote {
   padding-top: 10px;
   padding-bottom: 10px;
   padding-left: 40px;
-  background-image: url('../images/icons8-tick-box-416.png');
+  background-image: url("../images/icons8-tick-box-416.png");
   background-position: 0px 50%;
   background-size: 24px;
   background-repeat: no-repeat;
 }
 
 .check-item.third {
-  background-image: url('../images/icons8-tick-box-416-6.png');
+  background-image: url("../images/icons8-tick-box-416-6.png");
   background-size: 24px;
 }
 
 .check-item.second {
-  background-image: url('../images/icons8-tick-box-416-3.png');
+  background-image: url("../images/icons8-tick-box-416-3.png");
   background-size: 24px;
 }
 
 .check-item.fourth {
-  background-image: url('../images/icons8-tick-box-416-1.png');
+  background-image: url("../images/icons8-tick-box-416-1.png");
   background-size: 24px;
 }
 
 .check-item.fifth {
-  background-image: url('../images/icons8-tick-box-416-5.png');
+  background-image: url("../images/icons8-tick-box-416-5.png");
   background-size: 24px;
 }
 
 .check-item.sixth {
-  background-image: url('../images/icons8-tick-box-416-4.png');
+  background-image: url("../images/icons8-tick-box-416-4.png");
   background-size: 24px;
 }
 
@@ -6316,7 +6655,7 @@ blockquote {
   padding: 0px 0px 20px;
   border-radius: 10px;
   background-color: #fff;
-  background-image: url('../images/icons8-quote-left-100_1icons8-quote-left-100.png');
+  background-image: url("../images/icons8-quote-left-100_1icons8-quote-left-100.png");
   background-position: 96% 97%;
   background-size: 50px;
   background-repeat: no-repeat;
@@ -6431,14 +6770,26 @@ blockquote {
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
   background-color: #f4f5f9;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#fff), to(transparent));
+  background-image: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    from(#fff),
+    to(transparent)
+  );
   background-image: linear-gradient(180deg, #fff, transparent);
 }
 
 .gray-block.fourth {
   height: 90px;
   border-bottom: 2px solid #da0000;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#f4f5f9));
+  background-image: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    from(#fff),
+    to(#f4f5f9)
+  );
   background-image: linear-gradient(180deg, #fff, #f4f5f9);
 }
 
@@ -6447,14 +6798,26 @@ blockquote {
   margin-bottom: 30px;
   padding-right: 32px;
   border-bottom-color: #ffaf06;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#f4f5f9));
+  background-image: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    from(#fff),
+    to(#f4f5f9)
+  );
   background-image: linear-gradient(180deg, #fff, #f4f5f9);
 }
 
 .gray-block.first {
   height: 90px;
   border-bottom: 2px solid #ffaf06;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#f4f5f9));
+  background-image: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    from(#fff),
+    to(#f4f5f9)
+  );
   background-image: linear-gradient(180deg, #fff, #f4f5f9);
 }
 
@@ -6465,7 +6828,13 @@ blockquote {
   padding-right: 32px;
   padding-bottom: 0px;
   border-bottom-color: #1bc700;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#f4f5f9));
+  background-image: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    from(#fff),
+    to(#f4f5f9)
+  );
   background-image: linear-gradient(180deg, #fff, #f4f5f9);
 }
 
@@ -6480,21 +6849,39 @@ blockquote {
   margin-bottom: 30px;
   padding-right: 32px;
   padding-bottom: 0px;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#f4f5f9));
+  background-image: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    from(#fff),
+    to(#f4f5f9)
+  );
   background-image: linear-gradient(180deg, #fff, #f4f5f9);
 }
 
 .gray-block.third {
   height: 90px;
   border-bottom: 2px solid #0675ec;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#f4f5f9));
+  background-image: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    from(#fff),
+    to(#f4f5f9)
+  );
   background-image: linear-gradient(180deg, #fff, #f4f5f9);
 }
 
 .gray-block.sixth {
   height: 90px;
   border-bottom: 2px solid #16d3d3;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#f4f5f9));
+  background-image: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    from(#fff),
+    to(#f4f5f9)
+  );
   background-image: linear-gradient(180deg, #fff, #f4f5f9);
 }
 
@@ -6504,14 +6891,26 @@ blockquote {
   padding-right: 32px;
   border-bottom: 2px solid #5c1dff;
   background-color: #f4f5f9;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#f4f5f9));
+  background-image: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    from(#fff),
+    to(#f4f5f9)
+  );
   background-image: linear-gradient(180deg, #fff, #f4f5f9);
 }
 
 .gray-block.first {
   height: 90px;
   border-bottom: 2px solid #ffaf06;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#f4f5f9));
+  background-image: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    from(#fff),
+    to(#f4f5f9)
+  );
   background-image: linear-gradient(180deg, #fff, #f4f5f9);
 }
 
@@ -6522,14 +6921,26 @@ blockquote {
   padding-right: 32px;
   padding-bottom: 0px;
   border-bottom-color: #1bc700;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#f4f5f9));
+  background-image: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    from(#fff),
+    to(#f4f5f9)
+  );
   background-image: linear-gradient(180deg, #fff, #f4f5f9);
 }
 
 .gray-block.fourth {
   height: 90px;
   border-bottom: 2px solid #da0000;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#f4f5f9));
+  background-image: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    from(#fff),
+    to(#f4f5f9)
+  );
   background-image: linear-gradient(180deg, #fff, #f4f5f9);
 }
 
@@ -6538,7 +6949,13 @@ blockquote {
   margin-bottom: 30px;
   padding-right: 32px;
   border-bottom-color: #ffaf06;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#f4f5f9));
+  background-image: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    from(#fff),
+    to(#f4f5f9)
+  );
   background-image: linear-gradient(180deg, #fff, #f4f5f9);
 }
 
@@ -6559,7 +6976,7 @@ blockquote {
   height: 600px;
   border-radius: 0px;
   background-color: #fff;
-  background-image: url('../images/Free-Mockup-Scene.png');
+  background-image: url("../images/Free-Mockup-Scene.png");
   background-position: 50% 50%;
   background-size: contain;
   background-repeat: no-repeat;
@@ -6569,7 +6986,7 @@ blockquote {
 
 .image-tab.first {
   height: 460px;
-  background-image: url('../images/Freesbee.png');
+  background-image: url("../images/Freesbee.png");
   background-position: 50% 50%;
   background-size: contain;
   background-repeat: no-repeat;
@@ -6577,7 +6994,7 @@ blockquote {
 
 .image-tab.first.in-section {
   height: 500px;
-  background-image: url('../images/Collazh.png');
+  background-image: url("../images/Collazh.png");
   background-position: 50% 50%;
   background-size: contain;
   background-repeat: no-repeat;
@@ -6681,7 +7098,7 @@ blockquote {
   border: 0px none #fff;
   border-radius: 100%;
   background-color: transparent;
-  background-image: url('../images/icons8-circled-play-filled-100_2icons8-circled-play-filled-100.png');
+  background-image: url("../images/icons8-circled-play-filled-100_2icons8-circled-play-filled-100.png");
   background-position: 50% 50%;
   background-size: 70px;
   background-repeat: no-repeat;
@@ -6701,7 +7118,7 @@ blockquote {
   height: 82px;
   border-radius: 10140%;
   background-color: #fff;
-  background-image: url('../images/icons8-circled-play-filled-100_1icons8-circled-play-filled-100.png');
+  background-image: url("../images/icons8-circled-play-filled-100_1icons8-circled-play-filled-100.png");
   background-size: 80px;
 }
 
@@ -6821,7 +7238,13 @@ blockquote {
   border: 2px none transparent;
   border-radius: 25px;
   background-color: #fff;
-  background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.15)), to(transparent));
+  background-image: -webkit-gradient(
+    linear,
+    left bottom,
+    left top,
+    from(rgba(0, 0, 0, 0.15)),
+    to(transparent)
+  );
   background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.15), transparent);
 }
 
@@ -6884,7 +7307,7 @@ blockquote {
   bottom: auto;
   z-index: 10;
   width: 100%;
-  background-image: url('../images/Iphone-short.png');
+  background-image: url("../images/Iphone-short.png");
   background-position: 50% 50%;
   background-size: auto 600px;
   background-repeat: no-repeat;
@@ -7019,7 +7442,7 @@ blockquote {
   width: 60%;
   height: 600px;
   margin-bottom: 20px;
-  background-image: url('../images/Scene-1-2.png');
+  background-image: url("../images/Scene-1-2.png");
   background-position: 50% 0%;
   background-size: contain;
   background-repeat: no-repeat;
@@ -7050,7 +7473,7 @@ blockquote {
   width: 100%;
   height: 100%;
   border-radius: 20px;
-  background-image: url('../images/Video.png'), url('../images/Subscribeww.png');
+  background-image: url("../images/Video.png"), url("../images/Subscribeww.png");
   background-position: 0px 0px, 0px 0px;
   background-size: cover, cover;
   background-repeat: no-repeat, repeat;
@@ -7064,7 +7487,7 @@ blockquote {
   border-color: rgba(124, 132, 153, 0.24);
   border-radius: 100%;
   background-color: #f4f5f9;
-  background-image: url('../images/icons8-play-filled-500-1.png');
+  background-image: url("../images/icons8-play-filled-500-1.png");
   background-position: 50% 50%;
   background-size: 25px;
   background-repeat: no-repeat;
@@ -7074,7 +7497,12 @@ blockquote {
 
 .video-button:hover {
   background-color: rgba(203, 208, 223, 0.2);
-  background-image: url('../images/icons8-play-filled-500-1.png'), radial-gradient(circle farthest-corner at 50% 50%, #fff 39%, rgba(0, 0, 0, 0.1) 90%);
+  background-image: url("../images/icons8-play-filled-500-1.png"),
+    radial-gradient(
+      circle farthest-corner at 50% 50%,
+      #fff 39%,
+      rgba(0, 0, 0, 0.1) 90%
+    );
   background-position: 50% 50%, 0px 0px;
   background-size: 25px, auto;
   background-repeat: no-repeat, repeat;
@@ -7085,7 +7513,7 @@ blockquote {
   height: 45px;
   margin-right: 10px;
   margin-left: 10px;
-  background-image: url('../images/icons8-play-100_1icons8-play-100.png');
+  background-image: url("../images/icons8-play-100_1icons8-play-100.png");
 }
 
 .video-button.smaller.revers {
@@ -7158,12 +7586,24 @@ blockquote {
   width: 320px;
   height: 400px;
   border-radius: 10px;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#ff0fd9), to(#8c0fff));
+  background-image: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    from(#ff0fd9),
+    to(#8c0fff)
+  );
   background-image: linear-gradient(180deg, #ff0fd9, #8c0fff);
 }
 
 .color-block.second {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#fc6f00), to(#ff069c));
+  background-image: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    from(#fc6f00),
+    to(#ff069c)
+  );
   background-image: linear-gradient(180deg, #fc6f00, #ff069c);
 }
 
@@ -7175,7 +7615,7 @@ blockquote {
   margin-left: 100px;
   border-radius: 10px;
   background-color: #f4f5f9;
-  background-image: url('../images/page-under-construction-5.png');
+  background-image: url("../images/page-under-construction-5.png");
   background-position: 50% 50%;
   background-size: cover;
   background-repeat: no-repeat;
@@ -7189,7 +7629,8 @@ blockquote {
   right: 0px;
   margin-right: 100px;
   margin-left: 0px;
-  background-image: url('../images/Scene-1-2.png'), url('../images/Subscribeww.png');
+  background-image: url("../images/Scene-1-2.png"),
+    url("../images/Subscribeww.png");
   background-position: 50% 50%, 50% 50%;
   background-size: cover, cover;
   background-repeat: no-repeat, no-repeat;
@@ -7286,7 +7727,13 @@ blockquote {
   width: auto;
   margin-bottom: 20px;
   background-color: #0bf;
-  background-image: -webkit-gradient(linear, left top, right top, from(#ab0fff), color-stop(71%, #ff00f6));
+  background-image: -webkit-gradient(
+    linear,
+    left top,
+    right top,
+    from(#ab0fff),
+    color-stop(71%, #ff00f6)
+  );
   background-image: linear-gradient(90deg, #ab0fff, #ff00f6 71%);
 }
 
@@ -7294,7 +7741,13 @@ blockquote {
   width: 354px;
   margin-top: -27px;
   padding-top: 12px;
-  background-image: -webkit-gradient(linear, left top, right top, from(#21e9ff), to(#f600ff));
+  background-image: -webkit-gradient(
+    linear,
+    left top,
+    right top,
+    from(#21e9ff),
+    to(#f600ff)
+  );
   background-image: linear-gradient(90deg, #21e9ff, #f600ff);
   box-shadow: 1px 1px 3px 0 #000;
   font-size: 30px;
@@ -7316,7 +7769,13 @@ blockquote {
   width: 320px;
   height: 400px;
   border-radius: 10px;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#ff0fd9), to(#8c0fff));
+  background-image: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    from(#ff0fd9),
+    to(#8c0fff)
+  );
   background-image: linear-gradient(180deg, #ff0fd9, #8c0fff);
 }
 
@@ -7437,7 +7896,7 @@ blockquote {
   bottom: auto;
   width: 190px;
   height: 380px;
-  background-image: url('../images/animation1.gif');
+  background-image: url("../images/animation1.gif");
   background-position: 50% 50%;
   background-size: auto;
   background-repeat: repeat;
@@ -7781,7 +8240,13 @@ blockquote {
   min-height: 90vh;
   padding-top: 100px;
   padding-bottom: 60px;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#ff790f), to(#fff));
+  background-image: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    from(#ff790f),
+    to(#fff)
+  );
   background-image: linear-gradient(180deg, #ff790f, #fff);
 }
 
@@ -8249,7 +8714,8 @@ blockquote {
   -webkit-transition: -webkit-box-flex 200ms ease, -webkit-flex 200ms ease;
   transition: -webkit-box-flex 200ms ease, -webkit-flex 200ms ease;
   transition: flex 200ms ease;
-  transition: flex 200ms ease, -webkit-box-flex 200ms ease, -webkit-flex 200ms ease, -ms-flex 200ms ease;
+  transition: flex 200ms ease, -webkit-box-flex 200ms ease,
+    -webkit-flex 200ms ease, -ms-flex 200ms ease;
   font-family: Nunito, sans-serif;
   color: #fff;
   font-size: 2.43em;
@@ -9346,7 +9812,7 @@ blockquote {
   border: 1px solid #e4ecf6;
   border-radius: 5px;
   background-color: rgba(244, 245, 249, 0.5);
-  background-image: url('../images/icons8-contacts-64_1icons8-contacts-64.png');
+  background-image: url("../images/icons8-contacts-64_1icons8-contacts-64.png");
   background-position: 7px 48%;
   background-size: 20px;
   background-repeat: no-repeat;
@@ -9356,7 +9822,7 @@ blockquote {
 
 .text-field-3-copy.contact-form.gray.email {
   padding-left: 40px;
-  background-image: url('../images/icons8-secured-letter-64_1icons8-secured-letter-64.png');
+  background-image: url("../images/icons8-secured-letter-64_1icons8-secured-letter-64.png");
   background-size: 20px;
 }
 
@@ -9374,19 +9840,19 @@ blockquote {
 }
 
 .text-field-3-copy.contact-form.gray.budget {
-  background-image: url('../images/icons8-coins-80_1icons8-coins-80.png');
+  background-image: url("../images/icons8-coins-80_1icons8-coins-80.png");
   background-size: 20px;
 }
 
 .text-field-3-copy.contact-form.gray.subject {
-  background-image: url('../images/icons8-box-64_1icons8-box-64.png');
+  background-image: url("../images/icons8-box-64_1icons8-box-64.png");
   background-size: 20px;
   -o-object-fit: fill;
   object-fit: fill;
 }
 
 .text-field-3-copy.contact-form.gray.timeline {
-  background-image: url('../images/icons8-time-80_1icons8-time-80.png');
+  background-image: url("../images/icons8-time-80_1icons8-time-80.png");
   background-size: 20px;
 }
 
@@ -9503,7 +9969,8 @@ blockquote {
   -webkit-transition: -webkit-box-flex 200ms ease, -webkit-flex 200ms ease;
   transition: -webkit-box-flex 200ms ease, -webkit-flex 200ms ease;
   transition: flex 200ms ease;
-  transition: flex 200ms ease, -webkit-box-flex 200ms ease, -webkit-flex 200ms ease, -ms-flex 200ms ease;
+  transition: flex 200ms ease, -webkit-box-flex 200ms ease,
+    -webkit-flex 200ms ease, -ms-flex 200ms ease;
 }
 
 .bold-text-21 {
@@ -9539,7 +10006,8 @@ blockquote {
   -webkit-transition: -webkit-box-flex 200ms ease, -webkit-flex 200ms ease;
   transition: -webkit-box-flex 200ms ease, -webkit-flex 200ms ease;
   transition: flex 200ms ease;
-  transition: flex 200ms ease, -webkit-box-flex 200ms ease, -webkit-flex 200ms ease, -ms-flex 200ms ease;
+  transition: flex 200ms ease, -webkit-box-flex 200ms ease,
+    -webkit-flex 200ms ease, -ms-flex 200ms ease;
 }
 
 .text-block-13 {
@@ -9552,7 +10020,8 @@ blockquote {
   -webkit-transition: -webkit-box-flex 200ms ease, -webkit-flex 200ms ease;
   transition: -webkit-box-flex 200ms ease, -webkit-flex 200ms ease;
   transition: flex 200ms ease;
-  transition: flex 200ms ease, -webkit-box-flex 200ms ease, -webkit-flex 200ms ease, -ms-flex 200ms ease;
+  transition: flex 200ms ease, -webkit-box-flex 200ms ease,
+    -webkit-flex 200ms ease, -ms-flex 200ms ease;
   font-size: 20px;
   line-height: 25px;
 }
@@ -9708,7 +10177,7 @@ blockquote {
 }
 
 .section-7.both-side-padding.single {
-  background-image: url('../images/43243.png');
+  background-image: url("../images/43243.png");
   background-position: 61px 0px;
   background-size: 10%;
   background-repeat: no-repeat;
@@ -9728,7 +10197,13 @@ blockquote {
   padding-top: 75px;
   padding-bottom: 75px;
   background-color: transparent;
-  background-image: linear-gradient(135deg, rgba(252, 111, 0, 0.93) 19%, rgba(255, 6, 156, 0.88)), url('../images/square-3.png'), none, linear-gradient(180deg, rgba(252, 111, 0, 0.94), rgba(252, 111, 0, 0.94));
+  background-image: linear-gradient(
+      135deg,
+      rgba(252, 111, 0, 0.93) 19%,
+      rgba(255, 6, 156, 0.88)
+    ),
+    url("../images/square-3.png"), none,
+    linear-gradient(180deg, rgba(252, 111, 0, 0.94), rgba(252, 111, 0, 0.94));
   background-position: 0px 0px, 100% 100%, 43px 0px, 0px 0px;
   background-size: auto, 150px, 250px, auto;
   background-repeat: repeat, no-repeat, no-repeat, repeat;
@@ -9751,7 +10226,7 @@ blockquote {
 .section-7.white.no-padding.they-say {
   padding-top: 100px;
   padding-bottom: 0px;
-  background-image: url('../images/Square-5.png');
+  background-image: url("../images/Square-5.png");
   background-position: 87% 25%;
   background-size: 4%;
   background-repeat: no-repeat;
@@ -9772,7 +10247,13 @@ blockquote {
   padding-top: 212px;
   padding-bottom: 51px;
   background-color: transparent;
-  background-image: linear-gradient(135deg, rgba(252, 111, 0, 0.93) 19%, rgba(255, 6, 156, 0.88)), url('../images/square-3.png'), none, linear-gradient(180deg, rgba(252, 111, 0, 0.94), rgba(252, 111, 0, 0.94));
+  background-image: linear-gradient(
+      135deg,
+      rgba(252, 111, 0, 0.93) 19%,
+      rgba(255, 6, 156, 0.88)
+    ),
+    url("../images/square-3.png"), none,
+    linear-gradient(180deg, rgba(252, 111, 0, 0.94), rgba(252, 111, 0, 0.94));
   background-position: 0px 0px, 100% 100%, 43px 0px, 0px 0px;
   background-size: auto, 150px, 250px, auto;
   background-repeat: repeat, no-repeat, no-repeat, repeat;
@@ -9878,7 +10359,8 @@ blockquote {
   -webkit-transition: -webkit-box-flex 200ms ease, -webkit-flex 200ms ease;
   transition: -webkit-box-flex 200ms ease, -webkit-flex 200ms ease;
   transition: flex 200ms ease;
-  transition: flex 200ms ease, -webkit-box-flex 200ms ease, -webkit-flex 200ms ease, -ms-flex 200ms ease;
+  transition: flex 200ms ease, -webkit-box-flex 200ms ease,
+    -webkit-flex 200ms ease, -ms-flex 200ms ease;
   font-family: Nunito, sans-serif;
   color: #fff;
   font-size: 2.43em;
@@ -9894,7 +10376,8 @@ blockquote {
   margin-left: auto;
   border-radius: 4px;
   background-color: transparent;
-  background-image: url('../images/icons8-idea-240.png'), linear-gradient(135deg, #fc6f00 27%, #da0000);
+  background-image: url("../images/icons8-idea-240.png"),
+    linear-gradient(135deg, #fc6f00 27%, #da0000);
   background-position: 50% 50%, 0px 0px;
   background-size: 38px, auto;
   background-repeat: no-repeat, repeat;
@@ -9905,8 +10388,10 @@ blockquote {
   top: -30px;
   margin-bottom: 0px;
   border-radius: 10px;
-  background-image: url('../images/icons8-up-96-1_1icons8-up-96 (1).png'), -webkit-gradient(linear, left top, left bottom, from(#ffaf06), to(#ffaf06));
-  background-image: url('../images/icons8-up-96-1_1icons8-up-96 (1).png'), linear-gradient(180deg, #ffaf06, #ffaf06);
+  background-image: url("../images/icons8-up-96-1_1icons8-up-96 (1).png"),
+    -webkit-gradient(linear, left top, left bottom, from(#ffaf06), to(#ffaf06));
+  background-image: url("../images/icons8-up-96-1_1icons8-up-96 (1).png"),
+    linear-gradient(180deg, #ffaf06, #ffaf06);
   background-position: 50% 50%, 0px 0px;
   background-size: 40px, auto;
   background-repeat: no-repeat, repeat;
@@ -9918,8 +10403,10 @@ blockquote {
   top: -30px;
   margin-bottom: 0px;
   border-radius: 10px;
-  background-image: url('../images/instamiawhitelogo.png'), -webkit-gradient(linear, left top, left bottom, from(#2fd36e), to(#2fd36e));
-  background-image: url('../images/instamiawhitelogo.png'), linear-gradient(180deg, #2fd36e, #2fd36e);
+  background-image: url("../images/instamiawhitelogo.png"),
+    -webkit-gradient(linear, left top, left bottom, from(#2fd36e), to(#2fd36e));
+  background-image: url("../images/instamiawhitelogo.png"),
+    linear-gradient(180deg, #2fd36e, #2fd36e);
   background-position: 50% 50%, 0px 0px;
   background-size: 32px, auto;
   background-repeat: no-repeat, repeat;
@@ -9931,8 +10418,10 @@ blockquote {
   top: -30px;
   margin-bottom: 0px;
   border-radius: 10px;
-  background-image: url('../images/icons8-coins-80_1icons8-coins-80.png'), -webkit-gradient(linear, left top, left bottom, from(#8c0fff), to(#8c0fff));
-  background-image: url('../images/icons8-coins-80_1icons8-coins-80.png'), linear-gradient(180deg, #8c0fff, #8c0fff);
+  background-image: url("../images/icons8-coins-80_1icons8-coins-80.png"),
+    -webkit-gradient(linear, left top, left bottom, from(#8c0fff), to(#8c0fff));
+  background-image: url("../images/icons8-coins-80_1icons8-coins-80.png"),
+    linear-gradient(180deg, #8c0fff, #8c0fff);
   background-position: 50% 50%, 0px 0px;
   background-size: 38px, auto;
   background-repeat: no-repeat, repeat;
@@ -9940,7 +10429,8 @@ blockquote {
 }
 
 .features-icon-5.second {
-  background-image: url('../images/icons8-code-80_1icons8-code-80.png'), linear-gradient(135deg, #fc6f00 27%, #da0000);
+  background-image: url("../images/icons8-code-80_1icons8-code-80.png"),
+    linear-gradient(135deg, #fc6f00 27%, #da0000);
   background-size: 40px, auto;
 }
 
@@ -9951,7 +10441,7 @@ blockquote {
   margin-bottom: 0px;
   border-radius: 10px;
   background-color: #ff0fd9;
-  background-image: url('../images/icons8-technical-support-64_1icons8-technical-support-64.png');
+  background-image: url("../images/icons8-technical-support-64_1icons8-technical-support-64.png");
   background-position: 50% 50%;
   background-size: 40px;
   background-repeat: no-repeat;
@@ -10118,7 +10608,8 @@ blockquote {
   -webkit-transition: -webkit-box-flex 200ms ease, -webkit-flex 200ms ease;
   transition: -webkit-box-flex 200ms ease, -webkit-flex 200ms ease;
   transition: flex 200ms ease;
-  transition: flex 200ms ease, -webkit-box-flex 200ms ease, -webkit-flex 200ms ease, -ms-flex 200ms ease;
+  transition: flex 200ms ease, -webkit-box-flex 200ms ease,
+    -webkit-flex 200ms ease, -ms-flex 200ms ease;
 }
 
 .video-text-blck {
@@ -10131,7 +10622,8 @@ blockquote {
   -webkit-transition: -webkit-box-flex 200ms ease, -webkit-flex 200ms ease;
   transition: -webkit-box-flex 200ms ease, -webkit-flex 200ms ease;
   transition: flex 200ms ease;
-  transition: flex 200ms ease, -webkit-box-flex 200ms ease, -webkit-flex 200ms ease, -ms-flex 200ms ease;
+  transition: flex 200ms ease, -webkit-box-flex 200ms ease,
+    -webkit-flex 200ms ease, -ms-flex 200ms ease;
   font-size: 22px;
   line-height: 28px;
 }
@@ -10145,7 +10637,8 @@ blockquote {
   -webkit-transition: -webkit-box-flex 200ms ease, -webkit-flex 200ms ease;
   transition: -webkit-box-flex 200ms ease, -webkit-flex 200ms ease;
   transition: flex 200ms ease;
-  transition: flex 200ms ease, -webkit-box-flex 200ms ease, -webkit-flex 200ms ease, -ms-flex 200ms ease;
+  transition: flex 200ms ease, -webkit-box-flex 200ms ease,
+    -webkit-flex 200ms ease, -ms-flex 200ms ease;
 }
 
 .video-test-name {
@@ -10304,7 +10797,13 @@ blockquote {
   width: auto;
   margin-bottom: 20px;
   background-color: #0bf;
-  background-image: -webkit-gradient(linear, left top, right top, from(#ab0fff), color-stop(71%, #ff00f6));
+  background-image: -webkit-gradient(
+    linear,
+    left top,
+    right top,
+    from(#ab0fff),
+    color-stop(71%, #ff00f6)
+  );
   background-image: linear-gradient(90deg, #ab0fff, #ff00f6 71%);
 }
 
@@ -10317,7 +10816,13 @@ blockquote {
   margin-right: auto;
   margin-left: auto;
   padding-top: 12px;
-  background-image: -webkit-gradient(linear, left top, right top, from(#21e9ff), to(#f600ff));
+  background-image: -webkit-gradient(
+    linear,
+    left top,
+    right top,
+    from(#21e9ff),
+    to(#f600ff)
+  );
   background-image: linear-gradient(90deg, #21e9ff, #f600ff);
   box-shadow: 1px 1px 3px 0 #000;
   font-size: 30px;
@@ -10342,7 +10847,13 @@ blockquote {
   margin-left: 0px;
   padding: 10px;
   border-radius: 5px;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#ffc106), to(#ffc106));
+  background-image: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    from(#ffc106),
+    to(#ffc106)
+  );
   background-image: linear-gradient(180deg, #ffc106, #ffc106);
   box-shadow: 1px 1px 3px 0 #000;
   opacity: 1;
@@ -10360,7 +10871,13 @@ blockquote {
   margin-left: 10px;
   padding-right: 10px;
   padding-left: 10px;
-  background-image: -webkit-gradient(linear, left top, right top, from(#00e8f8), to(#ff29db));
+  background-image: -webkit-gradient(
+    linear,
+    left top,
+    right top,
+    from(#00e8f8),
+    to(#ff29db)
+  );
   background-image: linear-gradient(90deg, #00e8f8, #ff29db);
   font-size: 30px;
   line-height: 40px;
@@ -10493,7 +11010,13 @@ blockquote {
   width: auto;
   margin-bottom: 20px;
   background-color: #0bf;
-  background-image: -webkit-gradient(linear, left top, right top, from(#ab0fff), color-stop(71%, #ff00f6));
+  background-image: -webkit-gradient(
+    linear,
+    left top,
+    right top,
+    from(#ab0fff),
+    color-stop(71%, #ff00f6)
+  );
   background-image: linear-gradient(90deg, #ab0fff, #ff00f6 71%);
 }
 
@@ -10506,7 +11029,13 @@ blockquote {
   margin-right: auto;
   margin-left: auto;
   padding-top: 12px;
-  background-image: -webkit-gradient(linear, left top, right top, from(#21e9ff), to(#f600ff));
+  background-image: -webkit-gradient(
+    linear,
+    left top,
+    right top,
+    from(#21e9ff),
+    to(#f600ff)
+  );
   background-image: linear-gradient(90deg, #21e9ff, #f600ff);
   box-shadow: 1px 1px 3px 0 #000;
   font-size: 30px;
@@ -10531,7 +11060,13 @@ blockquote {
   margin-left: 0px;
   padding: 10px;
   border-radius: 5px;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#ffc106), to(#ffc106));
+  background-image: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    from(#ffc106),
+    to(#ffc106)
+  );
   background-image: linear-gradient(180deg, #ffc106, #ffc106);
   box-shadow: 1px 1px 3px 0 #000;
   opacity: 1;
@@ -10549,7 +11084,13 @@ blockquote {
   margin-left: 10px;
   padding-right: 10px;
   padding-left: 10px;
-  background-image: -webkit-gradient(linear, left top, right top, from(#00e8f8), to(#ff29db));
+  background-image: -webkit-gradient(
+    linear,
+    left top,
+    right top,
+    from(#00e8f8),
+    to(#ff29db)
+  );
   background-image: linear-gradient(90deg, #00e8f8, #ff29db);
   font-size: 30px;
   line-height: 40px;
@@ -10682,7 +11223,13 @@ blockquote {
   width: auto;
   margin-bottom: 20px;
   background-color: #0bf;
-  background-image: -webkit-gradient(linear, left top, right top, from(#ab0fff), color-stop(71%, #ff00f6));
+  background-image: -webkit-gradient(
+    linear,
+    left top,
+    right top,
+    from(#ab0fff),
+    color-stop(71%, #ff00f6)
+  );
   background-image: linear-gradient(90deg, #ab0fff, #ff00f6 71%);
 }
 
@@ -10695,7 +11242,13 @@ blockquote {
   margin-right: auto;
   margin-left: auto;
   padding-top: 12px;
-  background-image: -webkit-gradient(linear, left top, right top, from(#21e9ff), to(#f600ff));
+  background-image: -webkit-gradient(
+    linear,
+    left top,
+    right top,
+    from(#21e9ff),
+    to(#f600ff)
+  );
   background-image: linear-gradient(90deg, #21e9ff, #f600ff);
   box-shadow: 1px 1px 3px 0 #000;
   font-size: 30px;
@@ -10720,7 +11273,13 @@ blockquote {
   margin-left: 0px;
   padding: 10px;
   border-radius: 5px;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#ffc106), to(#ffc106));
+  background-image: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    from(#ffc106),
+    to(#ffc106)
+  );
   background-image: linear-gradient(180deg, #ffc106, #ffc106);
   box-shadow: 1px 1px 3px 0 #000;
   opacity: 1;
@@ -10738,7 +11297,13 @@ blockquote {
   margin-left: 10px;
   padding-right: 10px;
   padding-left: 10px;
-  background-image: -webkit-gradient(linear, left top, right top, from(#00e8f8), to(#ff29db));
+  background-image: -webkit-gradient(
+    linear,
+    left top,
+    right top,
+    from(#00e8f8),
+    to(#ff29db)
+  );
   background-image: linear-gradient(90deg, #00e8f8, #ff29db);
   font-size: 30px;
   line-height: 40px;
@@ -10871,7 +11436,13 @@ blockquote {
   width: auto;
   margin-bottom: 20px;
   background-color: #0bf;
-  background-image: -webkit-gradient(linear, left top, right top, from(#ab0fff), color-stop(71%, #ff00f6));
+  background-image: -webkit-gradient(
+    linear,
+    left top,
+    right top,
+    from(#ab0fff),
+    color-stop(71%, #ff00f6)
+  );
   background-image: linear-gradient(90deg, #ab0fff, #ff00f6 71%);
 }
 
@@ -10884,7 +11455,13 @@ blockquote {
   margin-right: auto;
   margin-left: auto;
   padding-top: 12px;
-  background-image: -webkit-gradient(linear, left top, right top, from(#21e9ff), to(#f600ff));
+  background-image: -webkit-gradient(
+    linear,
+    left top,
+    right top,
+    from(#21e9ff),
+    to(#f600ff)
+  );
   background-image: linear-gradient(90deg, #21e9ff, #f600ff);
   box-shadow: 1px 1px 3px 0 #000;
   font-size: 30px;
@@ -10909,7 +11486,13 @@ blockquote {
   margin-left: 0px;
   padding: 10px;
   border-radius: 5px;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#ffc106), to(#ffc106));
+  background-image: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    from(#ffc106),
+    to(#ffc106)
+  );
   background-image: linear-gradient(180deg, #ffc106, #ffc106);
   box-shadow: 1px 1px 3px 0 #000;
   opacity: 1;
@@ -10927,7 +11510,13 @@ blockquote {
   margin-left: 10px;
   padding-right: 10px;
   padding-left: 10px;
-  background-image: -webkit-gradient(linear, left top, right top, from(#00e8f8), to(#ff29db));
+  background-image: -webkit-gradient(
+    linear,
+    left top,
+    right top,
+    from(#00e8f8),
+    to(#ff29db)
+  );
   background-image: linear-gradient(90deg, #00e8f8, #ff29db);
   font-size: 30px;
   line-height: 40px;
@@ -11422,7 +12011,13 @@ blockquote {
   min-height: 90vh;
   padding-top: 100px;
   padding-bottom: 60px;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#ff790f), to(#fff));
+  background-image: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    from(#ff790f),
+    to(#fff)
+  );
   background-image: linear-gradient(180deg, #ff790f, #fff);
 }
 
@@ -11449,8 +12044,18 @@ blockquote {
   -webkit-align-items: center;
   -ms-flex-align: center;
   align-items: center;
-  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(36%, rgba(252, 111, 0, 0.95)), to(#ff069c));
-  background-image: linear-gradient(180deg, rgba(252, 111, 0, 0.95) 36%, #ff069c);
+  background-image: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    color-stop(36%, rgba(252, 111, 0, 0.95)),
+    to(#ff069c)
+  );
+  background-image: linear-gradient(
+    180deg,
+    rgba(252, 111, 0, 0.95) 36%,
+    #ff069c
+  );
 }
 
 .custom-section-res.dashboard-sec {
@@ -11621,7 +12226,7 @@ blockquote {
   padding: 0.6em 4em 0.6em 5.5em;
   border-radius: 0.4em;
   background-color: #fff;
-  background-image: url('../images/google.png');
+  background-image: url("../images/google.png");
   background-position: 18% 50%;
   background-size: 1.2em;
   background-repeat: no-repeat;
@@ -12285,7 +12890,7 @@ blockquote {
   -webkit-align-items: center;
   -ms-flex-align: center;
   align-items: center;
-  background-image: url('../images/cool-background-2.png');
+  background-image: url("../images/cool-background-2.png");
   background-position: 0px 0px;
   background-size: cover;
 }
@@ -12456,7 +13061,7 @@ blockquote {
   padding: 0.5em 2em 0.5em 1em;
   border-radius: 0.3em;
   background-color: #fff;
-  background-image: url('../images/close.png');
+  background-image: url("../images/close.png");
   background-position: 90% 50%;
   background-size: 0.8em;
   background-repeat: no-repeat;
@@ -12470,7 +13075,7 @@ blockquote {
 }
 
 .hashtag-ele.add {
-  background-image: url('../images/plus-2.png');
+  background-image: url("../images/plus-2.png");
 }
 
 .loading-sec {
@@ -12516,7 +13121,7 @@ blockquote {
   border-color: transparent;
   border-radius: 0.4em;
   background-color: #28a4f7;
-  background-image: url('../images/instagram.png');
+  background-image: url("../images/instagram.png");
   background-position: 6% 50%;
   background-size: 1em;
   background-repeat: no-repeat;
@@ -12788,7 +13393,8 @@ blockquote {
 }
 
 .grid-4 {
-  grid-template-areas: "Area Area"
+  grid-template-areas:
+    "Area Area"
     "Area Area";
 }
 
@@ -13352,7 +13958,7 @@ blockquote {
   }
 
   .section.with-gradient {
-    background-image: url('../images/square-9.png');
+    background-image: url("../images/square-9.png");
     background-position: 100px 0px;
     background-size: 10%;
     background-repeat: no-repeat;
@@ -13519,7 +14125,7 @@ blockquote {
   }
 
   .testimonial-photo.in-tab.third._3 {
-    background-image: url('../images/Screen-Shot-2020-03-25-at-9.58.36-PM-p-500.png');
+    background-image: url("../images/Screen-Shot-2020-03-25-at-9.58.36-PM-p-500.png");
   }
 
   .flex-row {
@@ -13664,7 +14270,13 @@ blockquote {
     display: block;
     height: auto;
     padding: 100px 20px 106px;
-    background-image: linear-gradient(135deg, rgba(252, 111, 0, 0.95), rgba(255, 6, 156, 0.92)), url('../images/bady-qb-751620-unsplash-1.jpg'), linear-gradient(135deg, #fc6f00, #ff069c);
+    background-image: linear-gradient(
+        135deg,
+        rgba(252, 111, 0, 0.95),
+        rgba(255, 6, 156, 0.92)
+      ),
+      url("../images/bady-qb-751620-unsplash-1.jpg"),
+      linear-gradient(135deg, #fc6f00, #ff069c);
     background-position: 0px 0px, 0px 0px, 0px 0px;
     background-size: auto, cover, auto;
   }
@@ -13685,7 +14297,13 @@ blockquote {
     display: block;
     height: auto;
     padding: 100px 20px 106px;
-    background-image: linear-gradient(135deg, rgba(252, 111, 0, 0.95), rgba(255, 6, 156, 0.92)), url('../images/bady-qb-751620-unsplash-1.jpg'), linear-gradient(135deg, #fc6f00, #ff069c);
+    background-image: linear-gradient(
+        135deg,
+        rgba(252, 111, 0, 0.95),
+        rgba(255, 6, 156, 0.92)
+      ),
+      url("../images/bady-qb-751620-unsplash-1.jpg"),
+      linear-gradient(135deg, #fc6f00, #ff069c);
     background-position: 0px 0px, 0px 0px, 0px 0px;
     background-size: auto, cover, auto;
     font-size: 1.3vw;
@@ -13707,7 +14325,13 @@ blockquote {
     display: block;
     height: auto;
     padding: 100px 20px 106px;
-    background-image: linear-gradient(135deg, rgba(252, 111, 0, 0.95), rgba(255, 6, 156, 0.92)), url('../images/bady-qb-751620-unsplash-1.jpg'), linear-gradient(135deg, #fc6f00, #ff069c);
+    background-image: linear-gradient(
+        135deg,
+        rgba(252, 111, 0, 0.95),
+        rgba(255, 6, 156, 0.92)
+      ),
+      url("../images/bady-qb-751620-unsplash-1.jpg"),
+      linear-gradient(135deg, #fc6f00, #ff069c);
     background-position: 0px 0px, 0px 0px, 0px 0px;
     background-size: auto, cover, auto;
     font-size: 1.3vw;
@@ -15174,7 +15798,12 @@ blockquote {
 
   .banner-section.intro {
     height: 100vh;
-    background-image: linear-gradient(315deg, rgba(242, 102, 24, 0.89), rgba(140, 15, 255, 0.94)), url('../images/bady-qb-751620-unsplash-1.jpg');
+    background-image: linear-gradient(
+        315deg,
+        rgba(242, 102, 24, 0.89),
+        rgba(140, 15, 255, 0.94)
+      ),
+      url("../images/bady-qb-751620-unsplash-1.jpg");
     background-position: 0px 0px, 50% 361%;
     background-size: auto, cover;
     background-repeat: repeat, no-repeat;
@@ -15338,7 +15967,7 @@ blockquote {
     text-align: center;
   }
 
-  .copyright.dorian-hoxha {
+  .copyright.jumpgram {
     padding-top: 10px;
     padding-bottom: 0px;
     text-align: center;
@@ -15538,7 +16167,13 @@ blockquote {
   .banner-home.half {
     padding-top: 100px;
     padding-bottom: 14px;
-    background-image: linear-gradient(135deg, rgba(252, 111, 0, 0.95), rgba(255, 6, 156, 0.9)), url('../images/bady-qb-751620-unsplash-1.jpg'), linear-gradient(135deg, #fc6f00, #ff069c);
+    background-image: linear-gradient(
+        135deg,
+        rgba(252, 111, 0, 0.95),
+        rgba(255, 6, 156, 0.9)
+      ),
+      url("../images/bady-qb-751620-unsplash-1.jpg"),
+      linear-gradient(135deg, #fc6f00, #ff069c);
     background-position: 0px 0px, 0px 0px, 0px 0px;
     background-size: auto, 1000px, auto;
   }
@@ -15546,7 +16181,13 @@ blockquote {
   .banner-home.homepage-responsive {
     padding-top: 10em;
     padding-bottom: 4em;
-    background-image: linear-gradient(135deg, rgba(252, 111, 0, 0.95), rgba(255, 6, 156, 0.9)), url('../images/bady-qb-751620-unsplash-1.jpg'), linear-gradient(135deg, #fc6f00, #ff069c);
+    background-image: linear-gradient(
+        135deg,
+        rgba(252, 111, 0, 0.95),
+        rgba(255, 6, 156, 0.9)
+      ),
+      url("../images/bady-qb-751620-unsplash-1.jpg"),
+      linear-gradient(135deg, #fc6f00, #ff069c);
     background-position: 0px 0px, 0px 0px, 0px 0px;
     background-size: auto, 1000px, auto;
     font-size: 1.5vw;
@@ -15555,7 +16196,13 @@ blockquote {
   .banner-home.homepage-responsive {
     padding-top: 10em;
     padding-bottom: 4em;
-    background-image: linear-gradient(135deg, rgba(252, 111, 0, 0.95), rgba(255, 6, 156, 0.9)), url('../images/bady-qb-751620-unsplash-1.jpg'), linear-gradient(135deg, #fc6f00, #ff069c);
+    background-image: linear-gradient(
+        135deg,
+        rgba(252, 111, 0, 0.95),
+        rgba(255, 6, 156, 0.9)
+      ),
+      url("../images/bady-qb-751620-unsplash-1.jpg"),
+      linear-gradient(135deg, #fc6f00, #ff069c);
     background-position: 0px 0px, 0px 0px, 0px 0px;
     background-size: auto, 1000px, auto;
     font-size: 1.5vw;
@@ -16706,7 +17353,12 @@ blockquote {
 
   .banner-section.intro {
     height: 100vh;
-    background-image: linear-gradient(307deg, rgba(252, 111, 0, 0.9), rgba(140, 15, 255, 0.9)), url('../images/bady-qb-751620-unsplash-1.jpg');
+    background-image: linear-gradient(
+        307deg,
+        rgba(252, 111, 0, 0.9),
+        rgba(140, 15, 255, 0.9)
+      ),
+      url("../images/bady-qb-751620-unsplash-1.jpg");
     background-position: 0px 0px, 50% 361%;
     background-size: auto, cover;
     background-repeat: repeat, no-repeat;
@@ -16833,7 +17485,13 @@ blockquote {
   .section.orange {
     margin-top: 0px;
     padding: 50px 40px;
-    background-image: linear-gradient(135deg, rgba(255, 6, 156, 0.88), rgba(252, 111, 0, 0.93) 81%), url('../images/square-3.png'), url('../images/square-3.png'), linear-gradient(180deg, rgba(252, 111, 0, 0.94), rgba(252, 111, 0, 0.94));
+    background-image: linear-gradient(
+        135deg,
+        rgba(255, 6, 156, 0.88),
+        rgba(252, 111, 0, 0.93) 81%
+      ),
+      url("../images/square-3.png"), url("../images/square-3.png"),
+      linear-gradient(180deg, rgba(252, 111, 0, 0.94), rgba(252, 111, 0, 0.94));
     background-position: 0px 0px, 100% 100%, 43px 0px, 0px 0px;
     background-size: auto, 150px, 250px, auto;
     background-repeat: repeat, no-repeat, no-repeat, repeat;
@@ -16849,7 +17507,13 @@ blockquote {
   .section.orange-copy {
     margin-top: 0px;
     padding: 50px 40px 40px;
-    background-image: linear-gradient(135deg, rgba(252, 111, 0, 0.93) 15%, rgba(168, 6, 255, 0.88) 69%), url('../images/square-3.png'), url('../images/square-3.png'), linear-gradient(180deg, rgba(252, 111, 0, 0.94), rgba(252, 111, 0, 0.94));
+    background-image: linear-gradient(
+        135deg,
+        rgba(252, 111, 0, 0.93) 15%,
+        rgba(168, 6, 255, 0.88) 69%
+      ),
+      url("../images/square-3.png"), url("../images/square-3.png"),
+      linear-gradient(180deg, rgba(252, 111, 0, 0.94), rgba(252, 111, 0, 0.94));
     background-position: 0px 0px, 100% 100%, 43px 0px, 0px 0px;
     background-size: auto, 150px, 250px, auto;
     background-repeat: repeat, no-repeat, no-repeat, repeat;
@@ -16859,7 +17523,13 @@ blockquote {
   .section.video-sec {
     margin-top: 0px;
     padding: 50px 20px 40px;
-    background-image: linear-gradient(135deg, rgba(252, 111, 0, 0.93) 15%, rgba(168, 6, 255, 0.88) 69%), url('../images/square-3.png'), url('../images/square-3.png'), linear-gradient(180deg, rgba(252, 111, 0, 0.94), rgba(252, 111, 0, 0.94));
+    background-image: linear-gradient(
+        135deg,
+        rgba(252, 111, 0, 0.93) 15%,
+        rgba(168, 6, 255, 0.88) 69%
+      ),
+      url("../images/square-3.png"), url("../images/square-3.png"),
+      linear-gradient(180deg, rgba(252, 111, 0, 0.94), rgba(252, 111, 0, 0.94));
     background-position: 0px 0px, 100% 100%, 43px 0px, 0px 0px;
     background-size: auto, 150px, 250px, auto;
     background-repeat: repeat, no-repeat, no-repeat, repeat;
@@ -17270,7 +17940,13 @@ blockquote {
     -webkit-flex-direction: column-reverse;
     -ms-flex-direction: column-reverse;
     flex-direction: column-reverse;
-    background-image: linear-gradient(135deg, rgba(252, 111, 0, 0.95), rgba(255, 6, 156, 0.9)), url('../images/bady-qb-751620-unsplash-1.jpg'), linear-gradient(135deg, #fc6f00, #ff069c);
+    background-image: linear-gradient(
+        135deg,
+        rgba(252, 111, 0, 0.95),
+        rgba(255, 6, 156, 0.9)
+      ),
+      url("../images/bady-qb-751620-unsplash-1.jpg"),
+      linear-gradient(135deg, #fc6f00, #ff069c);
     background-position: 0px 0px, 0px 0px, 0px 0px;
     background-size: auto, cover, auto;
   }
@@ -17288,7 +17964,13 @@ blockquote {
     -webkit-flex-direction: column-reverse;
     -ms-flex-direction: column-reverse;
     flex-direction: column-reverse;
-    background-image: linear-gradient(135deg, rgba(252, 111, 0, 0.95), rgba(255, 6, 156, 0.9)), url('../images/bady-qb-751620-unsplash-1.jpg'), linear-gradient(135deg, #fc6f00, #ff069c);
+    background-image: linear-gradient(
+        135deg,
+        rgba(252, 111, 0, 0.95),
+        rgba(255, 6, 156, 0.9)
+      ),
+      url("../images/bady-qb-751620-unsplash-1.jpg"),
+      linear-gradient(135deg, #fc6f00, #ff069c);
     background-position: 0px 0px, 0px 0px, 0px 0px;
     background-size: auto, cover, auto;
     font-size: 2.2vw;
@@ -17307,7 +17989,13 @@ blockquote {
     -webkit-flex-direction: column-reverse;
     -ms-flex-direction: column-reverse;
     flex-direction: column-reverse;
-    background-image: linear-gradient(135deg, rgba(252, 111, 0, 0.95), rgba(255, 6, 156, 0.9)), url('../images/bady-qb-751620-unsplash-1.jpg'), linear-gradient(135deg, #fc6f00, #ff069c);
+    background-image: linear-gradient(
+        135deg,
+        rgba(252, 111, 0, 0.95),
+        rgba(255, 6, 156, 0.9)
+      ),
+      url("../images/bady-qb-751620-unsplash-1.jpg"),
+      linear-gradient(135deg, #fc6f00, #ff069c);
     background-position: 0px 0px, 0px 0px, 0px 0px;
     background-size: auto, cover, auto;
     font-size: 2.2vw;
@@ -17341,8 +18029,12 @@ blockquote {
   }
 
   .about-section {
-    background-image: url('../images/43243.png'), url('../images/3535415.png'), -webkit-gradient(linear, left top, left bottom, from(hsla(0, 0%, 100%, 0.77)), to(hsla(0, 0%, 100%, 0.77))), url('../images/christian-perner-91905-unsplash.jpg');
-    background-image: url('../images/43243.png'), url('../images/3535415.png'), linear-gradient(180deg, hsla(0, 0%, 100%, 0.77), hsla(0, 0%, 100%, 0.77)), url('../images/christian-perner-91905-unsplash.jpg');
+    background-image: url("../images/43243.png"), url("../images/3535415.png"),
+      -webkit-gradient(linear, left top, left bottom, from(hsla(0, 0%, 100%, 0.77)), to(hsla(0, 0%, 100%, 0.77))),
+      url("../images/christian-perner-91905-unsplash.jpg");
+    background-image: url("../images/43243.png"), url("../images/3535415.png"),
+      linear-gradient(180deg, hsla(0, 0%, 100%, 0.77), hsla(0, 0%, 100%, 0.77)),
+      url("../images/christian-perner-91905-unsplash.jpg");
     background-size: 100px, 100px, auto, cover;
   }
 
@@ -17515,32 +18207,80 @@ blockquote {
 
   .features-block.build.top {
     padding-right: 30px;
-    background-image: -webkit-gradient(linear, left top, left bottom, from(hsla(0, 0%, 100%, 0.79)), to(hsla(0, 0%, 100%, 0.79))), url('../images/111.png');
-    background-image: linear-gradient(180deg, hsla(0, 0%, 100%, 0.79), hsla(0, 0%, 100%, 0.79)), url('../images/111.png');
+    background-image: -webkit-gradient(
+        linear,
+        left top,
+        left bottom,
+        from(hsla(0, 0%, 100%, 0.79)),
+        to(hsla(0, 0%, 100%, 0.79))
+      ),
+      url("../images/111.png");
+    background-image: linear-gradient(
+        180deg,
+        hsla(0, 0%, 100%, 0.79),
+        hsla(0, 0%, 100%, 0.79)
+      ),
+      url("../images/111.png");
     background-position: 0px 0px, 98% 108%;
     background-size: auto, 140px;
     background-repeat: repeat, no-repeat;
   }
 
   .features-block.build.top.second {
-    background-image: -webkit-gradient(linear, left top, left bottom, from(hsla(0, 0%, 100%, 0.8)), to(hsla(0, 0%, 100%, 0.8))), url('../images/222.png');
-    background-image: linear-gradient(180deg, hsla(0, 0%, 100%, 0.8), hsla(0, 0%, 100%, 0.8)), url('../images/222.png');
+    background-image: -webkit-gradient(
+        linear,
+        left top,
+        left bottom,
+        from(hsla(0, 0%, 100%, 0.8)),
+        to(hsla(0, 0%, 100%, 0.8))
+      ),
+      url("../images/222.png");
+    background-image: linear-gradient(
+        180deg,
+        hsla(0, 0%, 100%, 0.8),
+        hsla(0, 0%, 100%, 0.8)
+      ),
+      url("../images/222.png");
     background-position: 0px 0px, 100% 100%;
     background-size: auto, 140px;
     background-repeat: repeat, no-repeat;
   }
 
   .features-block.build.top.third {
-    background-image: -webkit-gradient(linear, left top, left bottom, from(hsla(0, 0%, 100%, 0.8)), to(hsla(0, 0%, 100%, 0.8))), url('../images/333.png');
-    background-image: linear-gradient(180deg, hsla(0, 0%, 100%, 0.8), hsla(0, 0%, 100%, 0.8)), url('../images/333.png');
+    background-image: -webkit-gradient(
+        linear,
+        left top,
+        left bottom,
+        from(hsla(0, 0%, 100%, 0.8)),
+        to(hsla(0, 0%, 100%, 0.8))
+      ),
+      url("../images/333.png");
+    background-image: linear-gradient(
+        180deg,
+        hsla(0, 0%, 100%, 0.8),
+        hsla(0, 0%, 100%, 0.8)
+      ),
+      url("../images/333.png");
     background-position: 0px 0px, 100% 100%;
     background-size: auto, 140px;
     background-repeat: repeat, no-repeat;
   }
 
   .features-block.build.top.fourth {
-    background-image: -webkit-gradient(linear, left top, left bottom, from(hsla(0, 0%, 100%, 0.8)), to(hsla(0, 0%, 100%, 0.8))), url('../images/444.png');
-    background-image: linear-gradient(180deg, hsla(0, 0%, 100%, 0.8), hsla(0, 0%, 100%, 0.8)), url('../images/444.png');
+    background-image: -webkit-gradient(
+        linear,
+        left top,
+        left bottom,
+        from(hsla(0, 0%, 100%, 0.8)),
+        to(hsla(0, 0%, 100%, 0.8))
+      ),
+      url("../images/444.png");
+    background-image: linear-gradient(
+        180deg,
+        hsla(0, 0%, 100%, 0.8),
+        hsla(0, 0%, 100%, 0.8)
+      ),
+      url("../images/444.png");
     background-position: 0px 0px, 100% 245%;
     background-size: auto, 140px;
     background-repeat: repeat, no-repeat;
@@ -17568,8 +18308,10 @@ blockquote {
   }
 
   .features-icon-4.third {
-    background-image: url('../images/instamiawhitelogo.png'), -webkit-gradient(linear, left top, left bottom, from(#0cf), to(#0cf));
-    background-image: url('../images/instamiawhitelogo.png'), linear-gradient(180deg, #0cf, #0cf);
+    background-image: url("../images/instamiawhitelogo.png"),
+      -webkit-gradient(linear, left top, left bottom, from(#0cf), to(#0cf));
+    background-image: url("../images/instamiawhitelogo.png"),
+      linear-gradient(180deg, #0cf, #0cf);
     background-position: 50% 50%, 0px 0px;
     background-size: 32px, auto;
     background-repeat: no-repeat, repeat;
@@ -17577,8 +18319,10 @@ blockquote {
   }
 
   .features-icon-4.first {
-    background-image: url('../images/icons8-up-96-1_1icons8-up-96 (1).png'), -webkit-gradient(linear, left top, left bottom, from(#ffe100), to(#ffe100));
-    background-image: url('../images/icons8-up-96-1_1icons8-up-96 (1).png'), linear-gradient(180deg, #ffe100, #ffe100);
+    background-image: url("../images/icons8-up-96-1_1icons8-up-96 (1).png"),
+      -webkit-gradient(linear, left top, left bottom, from(#ffe100), to(#ffe100));
+    background-image: url("../images/icons8-up-96-1_1icons8-up-96 (1).png"),
+      linear-gradient(180deg, #ffe100, #ffe100);
     background-position: 50% 50%, 0px 0px;
     background-size: 40px, auto;
     background-repeat: no-repeat, repeat;
@@ -17586,8 +18330,10 @@ blockquote {
   }
 
   .features-icon-4.fifth {
-    background-image: url('../images/icons8-coins-80_1icons8-coins-80.png'), -webkit-gradient(linear, left top, left bottom, from(#0675ec), to(#0675ec));
-    background-image: url('../images/icons8-coins-80_1icons8-coins-80.png'), linear-gradient(180deg, #0675ec, #0675ec);
+    background-image: url("../images/icons8-coins-80_1icons8-coins-80.png"),
+      -webkit-gradient(linear, left top, left bottom, from(#0675ec), to(#0675ec));
+    background-image: url("../images/icons8-coins-80_1icons8-coins-80.png"),
+      linear-gradient(180deg, #0675ec, #0675ec);
     background-position: 50% 50%, 0px 0px;
     background-size: 38px, auto;
     background-repeat: no-repeat, repeat;
@@ -17974,7 +18720,8 @@ blockquote {
   .grid-button {
     -ms-grid-columns: 1fr;
     grid-template-columns: 1fr;
-    -ms-grid-rows: auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto;
+    -ms-grid-rows: auto auto auto auto auto auto auto auto auto auto auto auto
+      auto auto auto auto auto auto auto;
     grid-template-rows: auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto;
   }
 
@@ -18498,7 +19245,8 @@ blockquote {
     -webkit-transition: -webkit-box-flex 200ms ease, -webkit-flex 200ms ease;
     transition: -webkit-box-flex 200ms ease, -webkit-flex 200ms ease;
     transition: flex 200ms ease;
-    transition: flex 200ms ease, -webkit-box-flex 200ms ease, -webkit-flex 200ms ease, -ms-flex 200ms ease;
+    transition: flex 200ms ease, -webkit-box-flex 200ms ease,
+      -webkit-flex 200ms ease, -ms-flex 200ms ease;
     color: #fff;
     font-size: 22px;
     font-weight: 600;
@@ -18744,7 +19492,8 @@ blockquote {
     -webkit-transition: -webkit-box-flex 200ms ease, -webkit-flex 200ms ease;
     transition: -webkit-box-flex 200ms ease, -webkit-flex 200ms ease;
     transition: flex 200ms ease;
-    transition: flex 200ms ease, -webkit-box-flex 200ms ease, -webkit-flex 200ms ease, -ms-flex 200ms ease;
+    transition: flex 200ms ease, -webkit-box-flex 200ms ease,
+      -webkit-flex 200ms ease, -ms-flex 200ms ease;
     color: #fff;
     font-size: 17px;
     font-weight: 600;
@@ -19103,7 +19852,13 @@ blockquote {
   .section-7.orange {
     margin-top: 0px;
     padding: 50px 40px;
-    background-image: linear-gradient(135deg, rgba(255, 6, 156, 0.88), rgba(252, 111, 0, 0.93) 81%), url('../images/square-3.png'), none, linear-gradient(180deg, rgba(252, 111, 0, 0.94), rgba(252, 111, 0, 0.94));
+    background-image: linear-gradient(
+        135deg,
+        rgba(255, 6, 156, 0.88),
+        rgba(252, 111, 0, 0.93) 81%
+      ),
+      url("../images/square-3.png"), none,
+      linear-gradient(180deg, rgba(252, 111, 0, 0.94), rgba(252, 111, 0, 0.94));
     background-position: 0px 0px, 100% 100%, 43px 0px, 0px 0px;
     background-size: auto, 150px, 250px, auto;
     background-repeat: repeat, no-repeat, no-repeat, repeat;
@@ -19119,7 +19874,13 @@ blockquote {
   .section-7.orange-copy {
     margin-top: 0px;
     padding: 50px 40px 40px;
-    background-image: linear-gradient(135deg, rgba(252, 111, 0, 0.93) 15%, rgba(168, 6, 255, 0.88) 69%), url('../images/square-3.png'), none, linear-gradient(180deg, rgba(252, 111, 0, 0.94), rgba(252, 111, 0, 0.94));
+    background-image: linear-gradient(
+        135deg,
+        rgba(252, 111, 0, 0.93) 15%,
+        rgba(168, 6, 255, 0.88) 69%
+      ),
+      url("../images/square-3.png"), none,
+      linear-gradient(180deg, rgba(252, 111, 0, 0.94), rgba(252, 111, 0, 0.94));
     background-position: 0px 0px, 100% 100%, 43px 0px, 0px 0px;
     background-size: auto, 150px, 250px, auto;
     background-repeat: repeat, no-repeat, no-repeat, repeat;
@@ -19145,7 +19906,8 @@ blockquote {
     -webkit-transition: -webkit-box-flex 200ms ease, -webkit-flex 200ms ease;
     transition: -webkit-box-flex 200ms ease, -webkit-flex 200ms ease;
     transition: flex 200ms ease;
-    transition: flex 200ms ease, -webkit-box-flex 200ms ease, -webkit-flex 200ms ease, -ms-flex 200ms ease;
+    transition: flex 200ms ease, -webkit-box-flex 200ms ease,
+      -webkit-flex 200ms ease, -ms-flex 200ms ease;
     color: #fff;
     font-size: 17px;
     font-weight: 600;
@@ -19184,8 +19946,10 @@ blockquote {
   }
 
   .features-icon-5.first {
-    background-image: url('../images/icons8-up-96-1_1icons8-up-96 (1).png'), -webkit-gradient(linear, left top, left bottom, from(#ffe100), to(#ffe100));
-    background-image: url('../images/icons8-up-96-1_1icons8-up-96 (1).png'), linear-gradient(180deg, #ffe100, #ffe100);
+    background-image: url("../images/icons8-up-96-1_1icons8-up-96 (1).png"),
+      -webkit-gradient(linear, left top, left bottom, from(#ffe100), to(#ffe100));
+    background-image: url("../images/icons8-up-96-1_1icons8-up-96 (1).png"),
+      linear-gradient(180deg, #ffe100, #ffe100);
     background-position: 50% 50%, 0px 0px;
     background-size: 40px, auto;
     background-repeat: no-repeat, repeat;
@@ -19193,8 +19957,10 @@ blockquote {
   }
 
   .features-icon-5.third {
-    background-image: url('../images/instamiawhitelogo.png'), -webkit-gradient(linear, left top, left bottom, from(#0cf), to(#0cf));
-    background-image: url('../images/instamiawhitelogo.png'), linear-gradient(180deg, #0cf, #0cf);
+    background-image: url("../images/instamiawhitelogo.png"),
+      -webkit-gradient(linear, left top, left bottom, from(#0cf), to(#0cf));
+    background-image: url("../images/instamiawhitelogo.png"),
+      linear-gradient(180deg, #0cf, #0cf);
     background-position: 50% 50%, 0px 0px;
     background-size: 32px, auto;
     background-repeat: no-repeat, repeat;
@@ -19202,8 +19968,10 @@ blockquote {
   }
 
   .features-icon-5.fifth {
-    background-image: url('../images/icons8-coins-80_1icons8-coins-80.png'), -webkit-gradient(linear, left top, left bottom, from(#0f8fff), to(#0f8fff));
-    background-image: url('../images/icons8-coins-80_1icons8-coins-80.png'), linear-gradient(180deg, #0f8fff, #0f8fff);
+    background-image: url("../images/icons8-coins-80_1icons8-coins-80.png"),
+      -webkit-gradient(linear, left top, left bottom, from(#0f8fff), to(#0f8fff));
+    background-image: url("../images/icons8-coins-80_1icons8-coins-80.png"),
+      linear-gradient(180deg, #0f8fff, #0f8fff);
     background-position: 50% 50%, 0px 0px;
     background-size: 38px, auto;
     background-repeat: no-repeat, repeat;
@@ -20649,4 +21417,3 @@ blockquote {
     grid-row-end: 4;
   }
 }
-
