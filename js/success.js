@@ -26,7 +26,7 @@ class HandleUserRedirection {
       } else {
         setTimeout(() => {
           this.retryToGetUserTokenFromStrapi();
-        }, 3000);
+        }, 5000);
       }
     } else {
       document.querySelector(".loader").style.display = "none";
@@ -50,7 +50,7 @@ class HandleUserRedirection {
 
   retryToGetUserTokenFromStrapi() {
     const retryCount = this.getRetryCount();
-    if (retryCount < 4) {
+    if (retryCount < 15) {
       this.setRetryCount(retryCount + 1);
       this.getUserTokenFromStrapi();
     } else {
