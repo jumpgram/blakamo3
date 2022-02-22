@@ -19,7 +19,7 @@ class HandleUserRedirection {
         `${STAPIURL}?filters[username][$eq]=${username}&sort[0]=publishedAt%3Adesc&pagination[limit]=1`
       );
       const resData = await response.json();
-
+      console.log(resData);
       if (resData && resData.data && resData.data.length > 0) {
         const user = resData.data[0];
         this.redirectToUserProfile(user);
