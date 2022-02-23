@@ -15,7 +15,7 @@ class HandleUserRedirection {
     console.log("getUserTokenFromStrapi");
     const username = this.getUserNameFromURL();
     if (username) {
-      alert(username);
+      alert($eq);
       const response = await fetch(
         `${STAPIURL}?filters[username][$eq]=${username}&sort[0]=publishedAt%3Adesc&pagination[limit]=1`
       );
