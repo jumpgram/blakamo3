@@ -1,0 +1,4 @@
+#Force non-www:
+RewriteEngine on
+RewriteCond %{HTTP_HOST} ^www.jumpgram.co [NC]
+RewriteRule ^(.*)$ https://jumpgram.co/$1 [L,R=301]
