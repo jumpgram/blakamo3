@@ -59,8 +59,37 @@ function hideModalInfo() {
 
 function initInstaCardSelectEL() {
   $('[data-insta-get="true"]').click(function () {
-    processCheckout(this);
+
+    const instaUserName = $(this).data("user-name");
+    if (!instaUserName) return;
+
+    const cbPriceID = 'cbdemo_standard-USD-monthly'
+    $('.usernamePopupContainer').addClass('show').show();
+    $('.usernamePopupContainer .popupBox').fadeIn();
+    $('.usernamePopupContainer .inner .popupBox .textbox').val(instaUserName);
+    $('#customCBModal .modal-content button[data-dismiss=modal]').on('click', function (e) {
+      $('#customCBModal').hide().removeClass('show');
+    });
+
+    $('.usernamePopupContainer .inner .popupBox .NextPageBtn').on('click', function (e) {
+
+      //get select modal inputs value
+      const instagram_user = $('.usernamePopupContainer #cb-instagram-username').val();
+
+      if (!instagram_user) {
+        return;
+      }
+      localStorage.setItem('instagram_user', instagram_user);
+      window.location.href = '/checkout.html';
+      // $('#selectModal').hide().removeClass('show');
+
+    });
+
   });
+  $('.usernamePopupContainer .cancelBtn').on('click', function (e) {
+    e.preventDefault();
+    $('.usernamePopupContainer').fadeOut(200)
+  })
 }
 
 function processCheckout(ele) {
@@ -188,8 +217,8 @@ function useFormValidation() {
           value.length === 0
             ? "UserName cannot be empty"
             : value.length >= 2
-            ? ""
-            : "UserName should atleast have 2 letters";
+              ? ""
+              : "UserName should atleast have 2 letters";
         break;
       default:
         break;
