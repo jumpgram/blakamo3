@@ -1807,7 +1807,107 @@ textarea.w-select {
 .w-condition-invisible {
   display: none !important;
 }
-.purple-clr {
-  background-color: #ffd900 !important;
-  display: inline-block !important;
+
+
+
+
+.usernamePopupContainer{
+  background-color: rgba(0,0,0, 0.4);
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  z-index: 99999999;
+
+  align-items: center;
+  
+  justify-content: center;
+  display: none;
+}
+
+.usernamePopupContainer.show{
+  display: flex;
+}
+
+.usernamePopupContainer .inner{
+  display: flex;
+  align-items: center;
+  display: block;
+  width: 100%;
+}
+
+.usernamePopupContainer .inner .popupBox{
+  position: relative;
+  background-color: #EEEEEE;
+  width: 25%;
+  margin: 0 auto;
+  border-radius: 3px;
+  overflow: hidden;
+  display: none;
+}
+
+.usernamePopupContainer .inner .popupBox .cancelBtn{
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  width: 25px;
+  height: 25px;
+  cursor: pointer;
+}
+
+.usernamePopupContainer .inner .popupBox h1{
+  background: #FFFFFF;
+  width: 100%;
+  text-align: center;
+  padding: 5px!important;
+  color: #333333;
+  font-size: 20px;
+  margin: 0px!important;
+
+  -webkit-box-shadow: 0 0 3px 3px #DDDDDD;
+  box-shadow: 0 0 3px 3px #DDDDDD;
+}
+
+.usernamePopupContainer .inner .popupBox .padded{
+  padding: 30px;
+}
+
+.usernamePopupContainer .inner .popupBox label{
+  font-weight: 500;
+}
+.usernamePopupContainer .inner .popupBox label span{
+  font-weight: 500;
+  display: block;
+  width: 100%;
+  margin-bottom: 15px;
+}
+.usernamePopupContainer .inner .popupBox .textbox{
+  width: 100%;
+  display: block;
+  border: 0px;
+  padding: 10px;
+  outline: none;
+  margin-bottom: 10px;
+}
+
+.usernamePopupContainer .inner .popupBox .NextPageBtn{
+  width: 100%;
+  display: block;
+  background-color: #3498db;
+  color: #FFFFFF;
+  text-align: center;
+  font-weight: 400;
+  font-size: 16px;
+  padding: 10px;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+@media only screen and (min-width: 300px) and (max-width: 700px ) {
+
+  .usernamePopupContainer .inner .popupBox{
+      width: 90%;
+  }
+
 }
