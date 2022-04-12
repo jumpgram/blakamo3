@@ -1,0 +1,303 @@
+body {
+    background-color: #f6faff;
+    font-family: 'Montserrat', sans-serif;
+    padding-bottom: 50px;
+}
+
+header {
+    background-color: rgb(252, 111, 0);
+    color: #FFFFFF;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    text-align: center;
+    margin-bottom: 50px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+header img {
+    width: 270px;
+    height: auto;
+    display: inline-block;
+}
+
+.checkoutContainer {
+    width: 27%;
+    margin: 0 auto;
+}
+
+.checkoutContainer h6 {
+    font-weight: 600;
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.checkoutContainer label {
+    width: 100%;
+    display: block;
+    margin-bottom: 15px;
+}
+
+.checkoutContainer label .error,
+.checkoutContainer .card-info .error,
+.checkoutContainer .process-error {
+    color: #eb4d4b;
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.checkoutContainer .card-info .error {
+    margin-top: 10px;
+}
+
+.checkoutContainer .textbox {
+    font-family: 'Montserrat', sans-serif;
+    outline: none;
+    width: 100%;
+    display: block;
+    background-color: #FFFFFF;
+    border: 1px solid #c2cfd6;
+    padding: 13px;
+    border-radius: 3px;
+    box-sizing: border-box;
+    font-size: 15px;
+}
+
+.checkoutContainer .freeTrialText {
+    font-size: 30px;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 25px;
+
+}
+
+.checkoutContainer .freeTrialText span {
+    margin-top: 15px;
+    display: block;
+    font-size: 18px;
+    color: #27ae60;
+}
+
+.checkoutContainer .secureIcon {
+    width: 100px;
+    height: auto;
+    margin-top: 10px;
+}
+
+.checkoutContainer .ex2-fieldset {
+    background: #FFFFFF;
+    padding: 15px;
+    padding-bottom: 5px;
+    border: 1px solid #c2cfd6;
+    border-radius: 3px;
+}
+
+.checkoutContainer .preview-edit {
+    position: relative;
+    background-color: #FFFFFF;
+    border: 1px solid #c2cfd6;
+    border-radius: 5px;
+    padding: 15px;
+    text-align: left;
+    margin-bottom: 20px;
+    font-size: 15px;
+}
+
+.checkoutContainer .preview-edit strong {
+    display: block;
+    width: 100%;
+    font-weight: 600;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.checkoutContainer .preview-edit p {
+    font-size: 15px;
+    margin-bottom: 10px;
+    line-height: 1.5em;
+    color: #777777;
+    font-weight: 500;
+}
+
+.checkoutContainer .preview-edit a {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+    background-color: #dddddd;
+    padding: 8px;
+    border-radius: 3px;
+    color: #666666;
+}
+
+
+.checkoutContainer .billingNotice {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 16px !important;
+}
+
+.checkoutContainer .terms-of-service a.tos {
+    position: static;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 15px;
+    background-color: none;
+    padding: 0px;
+    border-radius: 0px;
+    color: #fc6f00;
+}
+
+.proceedToNextStep,
+#tokenize,
+.proceedToCardInfo,
+.subscribeToJumpgram,
+.updateAccount,
+.updateBilling {
+    font-family: 'Montserrat', sans-serif;
+    width: 100%;
+    display: block;
+    background-color: #2ecc71;
+    color: #FFFFFF;
+    text-align: center;
+    font-weight: 600;
+    font-size: 18px;
+    padding: 10px;
+    border-radius: 5px !important;
+    text-decoration: none;
+    border: 0px;
+    box-sizing: border-box;
+    cursor: pointer;
+    margin-top: 30px;
+    margin-bottom: 15px;
+
+    float: left;
+    width: 49%;
+    margin-left: 1%;
+}
+
+#tokenize.fullWidth,
+.proceedToNextStep.fullWidth,
+.updateAccount.fullWidth,
+.updateBilling.fullWidth .updateBilling.full {
+    width: 100% !important;
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+.checkoutContainer .goBack {
+    background-color: #3498db;
+    color: #FFFFFF;
+    text-align: center;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 18px;
+    border-radius: 5px;
+    float: left;
+    width: 49%;
+    padding: 12px;
+    margin-right: 1%;
+    margin-top: 30px;
+    margin-bottom: 15px;
+    display: inline-block;
+    box-sizing: border-box;
+}
+
+.cencelLink {
+    color: #b14359;
+    font-size: 13px;
+    text-decoration: none;
+}
+
+.steps {
+    display: none;
+}
+
+.steps.show {
+    display: block;
+}
+
+.iti {
+    display: block !important;
+}
+
+.hidden {
+    display: none !important;
+}
+
+.checkout-loading {
+    position: relative;
+    display: block;
+    width: 100%;
+    background-image: url(../images/loading.svg);
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.checkout-loading.absolute {
+    position: absolute;
+}
+
+.checkout-loading.small {
+    height: 25px;
+    background-size: 25px 25px;
+}
+
+.checkout-loading.medium {
+    height: 40px;
+    background-size: 40px 40px;
+}
+
+.checkout-loading.large {
+    height: 80px;
+    background-size: 80px 80px;
+}
+
+.checkout-loading.bg-pos--none {
+    background-position: unset;
+}
+
+@media only screen and (min-width: 701px) and (max-width: 1061px) {
+
+    .checkoutContainer {
+        width: 61%;
+    }
+
+}
+
+@media only screen and (min-width: 1062px) and (max-width: 1218px) {
+
+    .checkoutContainer {
+        width: 45%;
+    }
+
+}
+
+@media only screen and (min-width: 1219px) and (max-width: 1500px) {
+
+    .checkoutContainer {
+        width: 35%;
+    }
+
+}
+
+@media only screen and (min-width: 1501px) and (max-width: 3000px) {
+
+    .checkoutContainer {
+        width: 28.3%;
+    }
+
+}
+
+@media only screen and (min-width: 300px) and (max-width: 700px) {
+
+    .checkoutContainer {
+        width: 90%;
+    }
+
+}
