@@ -36,7 +36,7 @@ class TermsPageHandle {
   }
 
   moveToSearchPage() {
-    window.location.href = `/success?username=${this.username}`;
+    window.location.href = `/success.html?username=${this.username}`;
   }
 }
 
