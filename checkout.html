@@ -358,6 +358,9 @@
                         <span id="card-combined" class="ex2-input"></span>
                     </label>
                 </div>
+                <label>
+                    <input type="text" class="textbox" id="cb-coupon" placeholder="Coupon (Optional)">
+                </label>
                 <div id="error" class="error"><span></span></div>
                 <center><img src="images/secure-checkout.png" class="secureIcon"></center>
                 <a href="javascript:void(0)" class="goBack" data-prev-nav="billing-info">Back</a>
@@ -656,6 +659,7 @@
                             type: 'POST',
                             data: {
                                 customer_id: $('#customerID').val(),
+                                coupon_id: $('#cb-coupon').val()
                             },
                             beforeSend: function () {
                                 //Add loading state here
@@ -692,7 +696,7 @@
             var cardIcon = true;
             var cbInstance = Chargebee.init({
                 site: "jump-gram",
-                publishableKey: "live_XOYNzzrk9NirFYPzPcdeBIQQ0JIsFoO6P",
+                publishableKey: "live_XOYNzzrk9NirFYPzPcdeBIQQ0JIsFoO6P", //LIVE
                 isItemsModel: true
             });
             var options = {
@@ -781,78 +785,104 @@
                         var billing_zip = $('#billing-zip').val();
                         var billing_country = $('#billing-country').val();
 
-                        cardComponent.tokenize({
-                            firstName: first_name,
-                            lastName: last_name,
-                            billingAddr1: billing_address_1,
-                            billingAddr2: billing_address_2,
-                            billingCity: billing_city,
-                            billingState: billing_state,
-                            billingZip: billing_zip,
-                            billingCountry: billing_country
-                        }).then(data => {
-                            $("#tokenize").removeClass("submit");
-                            $("#error").hide();
-                            //ajax post for chargebee
+                        //Before tokenization check coupon code if valid
+                        var verified = true;
+                        $.ajax({
+                            url: 'https://jumpgram.co/process/coupon-verify.php',
+                            type: 'POST',
+                            data: {
+                                coupon_id: $('#cb-coupon').val() != '' ? $('#cb-coupon').val() : '',
+                            },
+                            success: function (c_resp) {
+                                if (c_resp.api_error_code && c_resp.api_error_code.length > 0) {
+                                    $("#error").show();
+                                    $("#error span").text('Invalid coupon.');
+                                    $('#tokenize').removeClass("processing");
 
-                            if (data.token) {
-                                if ($('#payment').hasClass('update-form')) {
-                                    var url = 'https://jumpgram.co/process/update-card.php';
-                                } else {
-                                    var url = 'https://jumpgram.co/process/payments.php';
+                                    $("#tokenize").removeClass("submit");
+                                    $('#tokenize').children('span').removeClass('hidden');
+                                    $('#tokenize').children('.checkout-loading').addClass('hidden');
+                                    return;
                                 }
-                                $('#cb-payment-token').val(data.token);
-                                $.ajax({
-                                    url: url,
-                                    'type': 'POST',
-                                    data: {
-                                        gw_token: data.token,
-                                        customer_id: $('#customerID').val(),
-                                    },
-                                    beforeSend: function (e) {
-                                        // $("#tokenize").text('Please wait...');
-                                    },
-                                    success: function (response) {
-                                        $('#tokenize').removeClass("processing");
-                                        $('.goBack').removeClass('hidden');
-                                        if (response.message) {
-                                            //Means error
-                                            $("#error").show();
-                                            $("#error span").text(response.error_msg);
-                                            $('#tokenize').removeClass("processing");
+                                cardComponent.tokenize({
+                                    firstName: first_name,
+                                    lastName: last_name,
+                                    billingAddr1: billing_address_1,
+                                    billingAddr2: billing_address_2,
+                                    billingCity: billing_city,
+                                    billingState: billing_state,
+                                    billingZip: billing_zip,
+                                    billingCountry: billing_country
+                                }).then(data => {
+                                    $("#tokenize").removeClass("submit");
+                                    $("#error").hide();
+                                    //ajax post for chargebee
 
-                                            $("#tokenize").removeClass("submit");
-                                            $('#tokenize').children('span').removeClass('hidden');
-                                            $('#tokenize').children('.checkout-loading').addClass('hidden');
+                                    if (data.token) {
+                                        if ($('#payment').hasClass('update-form')) {
+                                            var url = 'https://jumpgram.co/process/update-card.php';
+                                        } else {
+                                            var url = 'https://jumpgram.co/process/payments.php';
                                         }
+                                        $('#cb-payment-token').val(data.token);
+                                        $.ajax({
+                                            url: url,
+                                            'type': 'POST',
+                                            data: {
+                                                gw_token: data.token,
+                                                customer_id: $('#customerID').val(),
+                                            },
+                                            beforeSend: function (e) {
+                                                // $("#tokenize").text('Please wait...');
+                                            },
+                                            success: function (response) {
+                                                $('#tokenize').removeClass("processing");
+                                                $('.goBack').removeClass('hidden');
+                                                if (response.message) {
+                                                    //Means error
+                                                    $("#error").show();
+                                                    $("#error span").text(response.error_msg);
+                                                    $('#tokenize').removeClass("processing");
 
-                                        if (response.payment_source.id) {
-                                            if ($('#payment').hasClass('update-form')) {
-                                                $('#tokenize span:not(.checkout-loading)').text('Next Step');
+                                                    $("#tokenize").removeClass("submit");
+                                                    $('#tokenize').children('span').removeClass('hidden');
+                                                    $('#tokenize').children('.checkout-loading').addClass('hidden');
+                                                }
+
+                                                if (response.payment_source.id) {
+                                                    if ($('#payment').hasClass('update-form')) {
+                                                        $('#tokenize span:not(.checkout-loading)').text('Next Step');
+                                                    }
+                                                    $('.preview-inputs .card-preview-info').html('<i class="fab fa-cc-' + (response.payment_source.card.brand == 'american_express' ? 'amex' : response.payment_source.card.brand) + '"></i> ending ' + response.payment_source.card.last4);
+                                                    $('#cbCustomForm .steps').removeClass('show');
+                                                    $('#cbCustomForm .preview-inputs').addClass('show');
+                                                    // window.location.href = "https://jumpgram.co/?subscription_status=success&id=" + response.subscription.id;
+                                                }
+
+                                                $('#tokenize').children('span').removeClass('hidden');
+                                                $('#tokenize').children('.checkout-loading').addClass('hidden');
                                             }
-                                            $('.preview-inputs .card-preview-info').html('<i class="fab fa-cc-' + (response.payment_source.card.brand == 'american_express' ? 'amex' : response.payment_source.card.brand) + '"></i> ending ' + response.payment_source.card.last4);
-                                            $('#cbCustomForm .steps').removeClass('show');
-                                            $('#cbCustomForm .preview-inputs').addClass('show');
-                                            // window.location.href = "https://jumpgram.co/?subscription_status=success&id=" + response.subscription.id;
-                                        }
-
-                                        $('#tokenize').children('span').removeClass('hidden');
-                                        $('#tokenize').children('.checkout-loading').addClass('hidden');
+                                        })
                                     }
-                                })
+
+                                }).catch(error => {
+                                    $('#tokenize').removeClass("processing");
+
+                                    $("#tokenize").removeClass("submit");
+                                    $('#tokenize').children('span').removeClass('hidden');
+                                    $('#tokenize').children('.checkout-loading').addClass('hidden');
+                                    // TODO get a proper error message
+                                    $("#error").show();
+                                    $("#error span").html("Validation Failed, Please click the button to retry again.");
+                                    $("#token").hide();
+                                });
+
+                            },
+                            error: function (e) {
+
                             }
+                        })
 
-                        }).catch(error => {
-                            $('#tokenize').removeClass("processing");
-
-                            $("#tokenize").removeClass("submit");
-                            $('#tokenize').children('span').removeClass('hidden');
-                            $('#tokenize').children('.checkout-loading').addClass('hidden');
-                            // TODO get a proper error message
-                            $("#error").show();
-                            $("#error span").html("Validation Failed, Please click the button to retry again.");
-                            $("#token").hide();
-                        });
                     }
                 });
             });
