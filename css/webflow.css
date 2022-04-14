@@ -1821,7 +1821,7 @@ textarea.w-select {
   z-index: 99999999;
 
   align-items: center;
-  
+
   justify-content: center;
   display: none;
 }
@@ -1910,4 +1910,8 @@ textarea.w-select {
       width: 90%;
   }
 
+}
+.purple-clr {
+  background-color: #ffd900 !important;
+  display: inline-block !important;
 }
