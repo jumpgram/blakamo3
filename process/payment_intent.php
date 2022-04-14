@@ -11,8 +11,9 @@ function curl_post($url, $post = null){
     curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
     curl_setopt($ch, CURLOPT_POST, 1);
     curl_setopt($ch, CURLOPT_POSTFIELDS, $post);
-    curl_setopt($ch, CURLOPT_USERPWD, 'live_4YB7yaCC4kGf8dEaWiB8lIBHEHt8ADFo' . ':' . '');
-
+    
+    curl_setopt($ch, CURLOPT_USERPWD, 'live_tingsUBvTvCOg4eqI5dEpc2kUFGsE8z2' . ':' . ''); // LIVE
+    
     $headers = array();
     $headers[] = 'Content-Type: application/x-www-form-urlencoded';
     curl_setopt($ch, CURLOPT_HTTPHEADER, $headers);
@@ -26,7 +27,7 @@ function curl_post($url, $post = null){
     return $result;
 }
 
-$estimates = curl_post('https://jump-gram.chargebee.com/api/v2/payment_intents', array(
+$estimates = curl_post('https://flocktask-test.chargebee.com/api/v2/payment_intents', array(
     'customer_id' => $_POST['customer_id'],
     'amount' => $_POST['amount'],
     'currency_code' => $_POST['currency_code'],
