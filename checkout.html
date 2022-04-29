@@ -393,6 +393,16 @@
                     <strong>Payment</strong>
                     <a href="#" class="edit-payment">Edit <i class="fas fa-arrow-right"></i></a>
                     <p class="card-preview-info"></p>
+                    <div class="discount-wrapper">
+                        <p class="percentage"><span class="percentage-amt"></span>% OFF</p>
+                        <p>
+                            <span class="discount_ammount"></span><span class="additional-text"></span> (<span
+                                class="strike">$<span class=""></span>/mo</span>) <br><small>Discount
+                                will
+                                apply after the 7-day trial</small>
+                        </p>
+
+                    </div>
                 </div>
                 <div class="terms-of-service">
                     <label>
@@ -791,6 +801,7 @@
                             url: 'https://jumpgram.co/process/coupon-verify.php',
                             type: 'POST',
                             data: {
+                                customer_id: $('#customerID').val(),
                                 coupon_id: $('#cb-coupon').val() != '' ? $('#cb-coupon').val() : '',
                             },
                             success: function (c_resp) {
@@ -804,6 +815,41 @@
                                     $('#tokenize').children('.checkout-loading').addClass('hidden');
                                     return;
                                 }
+
+                                $('.discount-wrapper').removeClass('show');
+                                $('.discount-wrapper .percentage .percentage-amt').text('');
+                                $('.discount-wrapper .additional-text').text('');
+                                $('.discount-wrapper .stike span').text('');
+                                $('.discount-wrapper .discount_ammount').text('');
+                                $('.discount-wrapper .percentage').removeClass('show');
+                                if (c_resp.estimate) {
+                                    var estimate = c_resp.estimate;
+                                    var discount_item = estimate.next_invoice_estimate.line_items[0];
+                                    var amount = +(discount_item.amount / 100).toFixed(2);
+                                    var discount_amount = +(estimate.next_invoice_estimate.amount_due / 100).toFixed(2);
+                                    if (discount_amount == 0) {
+                                        discount_amount = "FREE";
+                                    } else {
+                                        discount_amount = "$" + discount_amount;
+                                    }
+                                    var discount_type = c_resp.coupon.discount_type;
+                                    var add_text = '';
+                                    if (discount_type == 'percentage') {
+                                        $('.discount-wrapper .percentage .percentage-amt').text(c_resp.coupon.discount_percentage)
+                                        $('.discount-wrapper .percentage').addClass('show');
+                                    }
+                                    if (c_resp.coupon.duration_type == 'one_time') {
+                                        $('.discount-wrapper .additional-text').text(' for the first month.')
+                                    } else {
+                                        if (discount_amount != 'FREE') {
+                                            add_text = '/mo'
+                                        }
+                                    }
+                                    $('.discount-wrapper .discount_ammount').text(discount_amount + add_text)
+                                    $('.discount-wrapper .strike span').text(amount)
+                                    $('.discount-wrapper').addClass('show');
+                                }
+
                                 cardComponent.tokenize({
                                     firstName: first_name,
                                     lastName: last_name,

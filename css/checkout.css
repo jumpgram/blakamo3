@@ -90,6 +90,7 @@ header img {
     background: #FFFFFF;
     padding: 15px;
     padding-bottom: 5px;
+    margin-bottom: 15px;
     border: 1px solid #c2cfd6;
     border-radius: 3px;
 }
@@ -262,8 +263,18 @@ header img {
     background-position: unset;
 }
 
-.ex2-fieldset {
-    margin-bottom: 15px;
+.discount-wrapper,
+.discount-wrapper .percentage {
+    display: none;
+}
+
+.discount-wrapper.show,
+.discount-wrapper.show .percentage.show {
+    display: block;
+}
+
+.discount-wrapper .strike {
+    text-decoration: line-through;
 }
 
 @media only screen and (min-width: 701px) and (max-width: 1061px) {
