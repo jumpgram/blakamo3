@@ -18,3 +18,5 @@ jobs:
     steps:
     - name: Pull code from remote
       run: cd /var/www/jumpgram.co/ && git pull
+    - name: Fix files permissions
+      run: chown -R www-data:www-data /var/www/jumpgram.co
