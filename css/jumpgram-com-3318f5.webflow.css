@@ -4274,6 +4274,11 @@ blockquote {
   font-weight: 500;
 }
 
+.targeting-inquiries .hero-tittle{
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
 .hero-tittle.blog {
   width: 60%;
 }
@@ -17470,6 +17475,10 @@ blockquote {
     height: auto;
     margin-top: 0px;
     padding-bottom: 119px;
+  }
+
+  .targeting-inquiries .section.white{
+    margin-top: 40px;
   }
 
   .section.white.line {
